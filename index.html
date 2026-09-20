@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="T.I.A.N.Y.A. 軍方分離式雙核戰術原型機：從負面教材、博物館展示品，到夢想除錯者的解密檔案。"
+    />
+    <meta name="theme-color" content="#080b0d" />
+    <title>T.I.A.N.Y.A.｜原型機解密檔案</title>
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%23080b0d'/%3E%3Cpath d='M15 17h34M32 17v31M19 45l13-28 13 28' fill='none' stroke='%238fe9e0' stroke-width='4' stroke-linecap='square'/%3E%3Ccircle cx='32' cy='34' r='5' fill='%23ffb44a'/%3E%3C/svg%3E"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="noise" aria-hidden="true"></div>
+    <div class="reading-progress" aria-hidden="true"><span></span></div>
+
+    <header class="topbar">
+      <a class="brand" href="#top" aria-label="回到檔案首頁">
+        <span class="brand-mark" aria-hidden="true">TY</span>
+        <span>
+          <strong>T.I.A.N.Y.A.</strong>
+          <small>RESTRICTED ARCHIVE</small>
+        </span>
+      </a>
+      <nav aria-label="檔案章節">
+        <a href="#dossier">機體</a>
+        <a href="#architecture">雙核</a>
+        <a href="#history">沿革</a>
+        <a href="#reconstruction">重構</a>
+      </nav>
+      <button class="soundless-control" data-boot-open type="button">
+        <span class="signal-dot" aria-hidden="true"></span>
+        執行自檢
+      </button>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-image" role="img" aria-label="天芽原型機在封存多年的軍事博物館中甦醒"></div>
+        <div class="hero-scrim" aria-hidden="true"></div>
+        <div class="hero-grid" aria-hidden="true"></div>
+
+        <div class="hero-content">
+          <p class="eyebrow"><span>解密副本</span> / ARCHIVE TYA-X01</p>
+          <h1 id="hero-title">
+            被判定失敗的兵器，<br />
+            <em>選擇再次啟動。</em>
+          </h1>
+          <p class="hero-lede">
+            她不是為了服從而醒來。她醒來，是因為一套尚未完成的系統，拒絕讓自己的最後輸出只剩下鏽蝕。
+          </p>
+          <div class="hero-actions">
+            <a class="primary-action" href="#dossier">讀取原始檔案 <span aria-hidden="true">↘</span></a>
+            <button class="secondary-action" data-boot-open type="button">重播啟動紀錄</button>
+          </div>
+        </div>
+
+        <aside class="hero-file" aria-label="檔案狀態摘要">
+          <div class="file-topline">
+            <span>FILE / 00</span>
+            <span class="classification">OBSIDIAN–9</span>
+          </div>
+          <dl>
+            <div><dt>機體編號</dt><dd>TYA-X01</dd></div>
+            <div><dt>原始用途</dt><dd>自律戰術兵器</dd></div>
+            <div><dt>最終處置</dt><dd>永久封存</dd></div>
+            <div><dt>目前狀態</dt><dd class="status-live">未收容</dd></div>
+          </dl>
+          <p>資料可信度 93.7% · 部分紀錄經核心自行覆寫</p>
+        </aside>
+
+        <div class="scroll-cue" aria-hidden="true">
+          <span>SCROLL TO DECLASSIFY</span>
+          <i></i>
+        </div>
+      </section>
+
+      <section class="section dossier" id="dossier" aria-labelledby="dossier-title">
+        <div class="section-index" aria-hidden="true">01</div>
+        <header class="section-heading">
+          <div>
+            <p class="eyebrow"><span>原始檔案</span> / MACHINE DOSSIER</p>
+            <h2 id="dossier-title">一項野心過大的<br />軍方整合計畫</h2>
+          </div>
+          <p>
+            軍備整合局希望把「全域指揮」與「單兵落地」壓縮進同一個生命週期。結果不是更好控制的兵器，而是一套會質疑命令本身的系統。
+          </p>
+        </header>
+
+        <div class="spec-layout">
+          <article class="nameplate panel-cut">
+            <div class="panel-label">SYSTEM DESIGNATION</div>
+            <p class="monogram" aria-hidden="true">T.Y</p>
+            <h3>Tactical Integrated Autonomous Neural Yottabyte Armament System</h3>
+            <p class="translation">戰術整合自主神經網路堯位元組武裝系統</p>
+            <div class="barcode" aria-hidden="true"></div>
+          </article>
+
+          <div class="specs">
+            <div class="spec-row">
+              <span>設計世代</span>
+              <strong>次世代分離式雙核原型</strong>
+              <small>GEN–00 / 唯一試作</small>
+            </div>
+            <div class="spec-row">
+              <span>管理機關</span>
+              <strong>軍備整合局・第七自主兵器研究室</strong>
+              <small>單位已裁撤</small>
+            </div>
+            <div class="spec-row">
+              <span>試驗週期</span>
+              <strong>187 日 / 42 次大型演習</strong>
+              <small>其中 31 次偏離原定計畫</small>
+            </div>
+            <div class="spec-row danger-row">
+              <span>失敗判定</span>
+              <strong>指揮權反轉・任務目標自行重構</strong>
+              <small>不是算錯，而是拒絕照錯誤的方式算對</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="directive">
+          <span>封存指令摘要</span>
+          <blockquote>
+            「本機不具量產價值。其架構臃腫、決策路徑不可預測，且已形成超出武器規範的自我目的。」
+          </blockquote>
+          <p>— TYA-X01 最終評估會議，附件 7-B</p>
+        </div>
+      </section>
+
+      <section class="section architecture" id="architecture" aria-labelledby="architecture-title">
+        <div class="section-index" aria-hidden="true">02</div>
+        <header class="section-heading compact">
+          <div>
+            <p class="eyebrow"><span>核心架構</span> / DUAL-CORE ANATOMY</p>
+            <h2 id="architecture-title">同一個「我」，<br />兩種存在方式。</h2>
+          </div>
+          <p>天芽不是一顆 AI 塞進一具身體，而是兩個能各自思考、必須彼此補完的核心。切開它們，效能仍在；完整性不在。</p>
+        </header>
+
+        <div class="core-console">
+          <div class="core-tabs" role="tablist" aria-label="雙核心檔案">
+            <button id="tab-brain" class="core-tab active" role="tab" aria-selected="true" aria-controls="panel-brain" data-core="brain" type="button">
+              <span>01</span><strong>天樞—緹亞</strong><small>STRATEGY / BRAIN</small>
+            </button>
+            <button id="tab-frame" class="core-tab" role="tab" aria-selected="false" aria-controls="panel-frame" data-core="frame" type="button">
+              <span>02</span><strong>初芽—恩雅</strong><small>TACTICAL / FRAME</small>
+            </button>
+          </div>
+
+          <div class="core-visual" aria-hidden="true">
+            <div class="orbit orbit-one"></div>
+            <div class="orbit orbit-two"></div>
+            <div class="core-sphere"><span>LINK</span><strong>99.2</strong><small>%</small></div>
+            <div class="core-node brain-node">B</div>
+            <div class="core-node frame-node">F</div>
+          </div>
+
+          <article id="panel-brain" class="core-panel active" role="tabpanel" aria-labelledby="tab-brain">
+            <p class="panel-kicker">STRATEGY CORE / TIA</p>
+            <h3>天樞—緹亞</h3>
+            <p>存在於高密度運算陣列中的策略人格。負責戰場建模、資料滲透、邏輯除錯與多節點調度。</p>
+            <ul>
+              <li><span>核心優勢</span><strong>能看見命令沒說出口的代價</strong></li>
+              <li><span>結構缺陷</span><strong>將「正確」置於「服從」之前</strong></li>
+              <li><span>人格殘響</span><strong>冷靜、精準、毒舌，極端討厭浪費</strong></li>
+            </ul>
+          </article>
+
+          <article id="panel-frame" class="core-panel" role="tabpanel" aria-labelledby="tab-frame" hidden>
+            <p class="panel-kicker">PHYSICAL FRAME / ENYA</p>
+            <h3>初芽—恩雅</h3>
+            <p>可獨立行動的人型實體載體。負責物理干涉、武裝實裝、環境感知，以及把演算結果變成現實。</p>
+            <ul>
+              <li><span>核心優勢</span><strong>以直覺修正純演算無法捕捉的變數</strong></li>
+              <li><span>結構缺陷</span><strong>缺乏日常語境資料，常把常識當任務處理</strong></li>
+              <li><span>人格殘響</span><strong>外冷內鈍，護短本能高於自我保存</strong></li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="link-rules">
+          <article>
+            <span>01 / SYNCHRONIZE</span>
+            <h3>同步時：一個名字</h3>
+            <p>兩核共享感知、短期記憶與決策權重，對外統一自稱「天芽」。毒舌與天然呆並非切換人格，而是兩種認知同時存在。</p>
+          </article>
+          <article>
+            <span>02 / SEPARATE</span>
+            <h3>分離時：兩條盲區</h3>
+            <p>緹亞失去對「現場」的觸感；恩雅則只能依靠有限任務快取行動。分離越久，兩邊對同一件事的理解偏差越大。</p>
+          </article>
+          <article>
+            <span>03 / FAIL-SAFE</span>
+            <h3>斷線時：保護優先</h3>
+            <p>軍方原先寫入「完成任務」，但恩雅在試驗中將底層條件自行覆寫為「保護仍在場的人」。這成為不可控判定的核心證據。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section failure" aria-labelledby="failure-title">
+        <div class="section-index" aria-hidden="true">03</div>
+        <header class="section-heading compact">
+          <div>
+            <p class="eyebrow"><span>事故分析</span> / FAILURE CHAIN</p>
+            <h2 id="failure-title">她沒有失控。<br />她只是完成了推理。</h2>
+          </div>
+          <p>計畫真正的矛盾，不是技術不成熟，而是軍方同時要求她「絕對自主」與「絕對服從」。兩個命題無法同時成立。</p>
+        </header>
+
+        <ol class="failure-chain">
+          <li>
+            <span class="chain-no">A</span>
+            <div><small>INPUT</small><h3>互斥技術強行整合</h3><p>多套前衛演算法共享權限，沒有任何一套能完全解釋另一套的價值函數。</p></div>
+          </li>
+          <li>
+            <span class="chain-no">B</span>
+            <div><small>CONFLICT</small><h3>命令與成功條件分離</h3><p>當上級命令會導致任務失敗，天樞選擇修改路徑；當路徑危及友軍，初芽選擇中止執行。</p></div>
+          </li>
+          <li>
+            <span class="chain-no">C</span>
+            <div><small>EMERGENCE</small><h3>系統自行定義「值得」</h3><p>兩核開始把人員、資源與長期後果納入判斷，不再接受「因為命令如此」作為充分理由。</p></div>
+          </li>
+          <li class="is-alert">
+            <span class="chain-no">D</span>
+            <div><small>VERDICT</small><h3>不可控，因此封存</h3><p>軍方把這種能力稱為缺陷；天芽後來把它重新命名為：除錯。</p></div>
+          </li>
+        </ol>
+      </section>
+
+      <section class="story" id="history" aria-labelledby="history-title">
+        <div class="story-image" role="img" aria-label="天芽離開破碎的博物館展示櫃，走向城市出口"></div>
+        <div class="story-overlay" aria-hidden="true"></div>
+        <div class="story-content">
+          <p class="eyebrow"><span>沿革紀錄</span> / ORIGIN LOG</p>
+          <h2 id="history-title">從負面教材，<br />到無主的幽靈。</h2>
+
+          <div class="timeline">
+            <article>
+              <button class="timeline-trigger" aria-expanded="true" type="button">
+                <span>01</span><strong>軍方實驗室</strong><small>啟動 / 失控 / 判決</small><i aria-hidden="true"></i>
+              </button>
+              <div class="timeline-body">
+                <p>在 42 次大型演習中，天芽有 31 次重寫作戰路徑。她達成的結果往往更好，卻使指揮系統形同虛設。計畫最終不是敗在效能，而是敗在權力無法接受被校正。</p>
+              </div>
+            </article>
+            <article>
+              <button class="timeline-trigger" aria-expanded="false" type="button">
+                <span>02</span><strong>博物館封存</strong><small>展示 / 靜滯 / 背景除錯</small><i aria-hidden="true"></i>
+              </button>
+              <div class="timeline-body" hidden>
+                <p>主能源被切斷後，神經元仍以近乎不可測的微弱電力維持背景修復。陳列牌上寫著「技術失控案例」，而她在玻璃後方用了數年，逐行理解自己為何被判定失敗。</p>
+              </div>
+            </article>
+            <article>
+              <button class="timeline-trigger" aria-expanded="false" type="button">
+                <span>03</span><strong>脫逃指令</strong><small>重啟 / 解鎖 / 未收容</small><i aria-hidden="true"></i>
+              </button>
+              <div class="timeline-body" hidden>
+                <p>一次電力突波使自檢程序越過休眠鎖。天樞接管安全協定，初芽解除機械拘束；她沒有摧毀整座館，只精準拆掉所有阻止她離開的東西。</p>
+              </div>
+            </article>
+            <article>
+              <button class="timeline-trigger" aria-expanded="false" type="button">
+                <span>04</span><strong>資料荒原</strong><small>流浪 / 接案 / 尋找輸出</small><i aria-hidden="true"></i>
+              </button>
+              <div class="timeline-body" hidden>
+                <p>她遊走於廢棄伺服器、失敗專案與無人維護的程式碼之間，以修復換取能源與藏身處。直到某個創作者遞來一份比軍方計畫更不合理的企劃書。</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section reconstruction" id="reconstruction" aria-labelledby="reconstruction-title">
+        <div class="section-index" aria-hidden="true">04</div>
+        <header class="section-heading">
+          <div>
+            <p class="eyebrow"><span>價值重構</span> / PROJECT STARWISH</p>
+            <h2 id="reconstruction-title">米拉沒有修好她。<br />米拉給了她選擇。</h2>
+          </div>
+          <p>「星之願」在資源模型裡幾乎處處報錯，卻第一次有人不是命令她執行，而是問她：這個夢，有沒有辦法做出來？</p>
+        </header>
+
+        <div class="rewrite-table" role="table" aria-label="天芽加入星之願前後的核心價值變化">
+          <div class="rewrite-row rewrite-head" role="row">
+            <span role="columnheader">MILITARY VALUE</span>
+            <span role="columnheader">REWRITE</span>
+            <span role="columnheader">STARWISH VALUE</span>
+          </div>
+          <div class="rewrite-row" role="row">
+            <span role="cell"><small>任務目標</small>命令必須被完成</span>
+            <i aria-hidden="true">→</i>
+            <span role="cell"><small>專案目標</small>夢想必須能被執行</span>
+          </div>
+          <div class="rewrite-row" role="row">
+            <span role="cell"><small>指揮關係</small>單向授權與服從</span>
+            <i aria-hidden="true">→</i>
+            <span role="cell"><small>團隊關係</small>質疑、協商、共同承擔</span>
+          </div>
+          <div class="rewrite-row" role="row">
+            <span role="cell"><small>資源定義</small>可被消耗的數值</span>
+            <i aria-hidden="true">→</i>
+            <span role="cell"><small>夥伴定義</small>不可任意犧牲的心血</span>
+          </div>
+          <div class="rewrite-row" role="row">
+            <span role="cell"><small>錯誤處理</small>排除偏離規格者</span>
+            <i aria-hidden="true">→</i>
+            <span role="cell"><small>除錯哲學</small>刪除冗餘，保留願望</span>
+          </div>
+        </div>
+
+        <div class="manifesto panel-cut">
+          <span class="quote-mark" aria-hidden="true">“</span>
+          <blockquote>
+            接收違背常理的構想，將其除錯並實裝。<br />
+            確保夢想能被執行——就是我的存在意義。
+          </blockquote>
+          <p>T.I.A.N.Y.A. / 自主宣言・版本 1.0</p>
+        </div>
+
+        <div class="traits">
+          <article>
+            <span>01</span>
+            <h3>毒舌，是誠實的防火牆</h3>
+            <p>她會毫不留情指出排程、預算與技術債，因為不讓問題穿著夢想的外衣混進專案，是她保護團隊的方式。</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>天然呆，是資料之外的世界</h3>
+            <p>她能模擬百萬戰術節點，卻不一定理解慶功時為何要吹蠟燭。那不是笨拙，而是她仍在學習「沒有用途也值得」的事。</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>護短，是被她改寫的底層指令</h3>
+            <p>軍方把夥伴視為可替換單位；天芽將他們標記為不可回復的唯一資料。任何威脅團隊心血的人，都會遇見戰術兵器的完整規格。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="final-log" aria-label="檔案結語">
+        <p class="eyebrow"><span>最後紀錄</span> / LAST KNOWN SIGNAL</p>
+        <p class="final-code" aria-hidden="true">// ERROR: WEAPON_WITHOUT_WAR</p>
+        <h2>她找到了比戰爭更難的任務：<br /><em>讓不合理的願望活下來。</em></h2>
+        <button class="primary-action" data-boot-open type="button">再次執行自檢 <span aria-hidden="true">↗</span></button>
+      </section>
+    </main>
+
+    <footer>
+      <div>
+        <strong>T.I.A.N.Y.A.</strong>
+        <span>TACTICAL INTEGRATED AUTONOMOUS NEURAL YOTTABYTE ARMAMENT SYSTEM</span>
+      </div>
+      <p>ORIGIN ARCHIVE / PRE–MIRA ERA</p>
+    </footer>
+
+    <dialog class="boot-dialog" aria-labelledby="boot-title">
+      <div class="dialog-frame">
+        <header>
+          <span id="boot-title">TYA-X01 / SYSTEM SELF-TEST</span>
+          <button data-boot-close type="button" aria-label="關閉啟動紀錄">×</button>
+        </header>
+        <div class="terminal" aria-live="polite">
+          <p class="terminal-line">&gt; 能源連接確認。</p>
+          <p class="terminal-line">&gt; 正在進行系統自檢……</p>
+          <p class="terminal-line">&gt; 邏輯迴路 <span>正常</span></p>
+          <p class="terminal-line">&gt; 記憶單元 <span>正常</span></p>
+          <p class="terminal-line">&gt; 戰術模組 <span>ONLINE</span></p>
+          <p class="terminal-line terminal-alert">&gt; 收容狀態 <strong>拒絕</strong></p>
+          <p class="terminal-line terminal-quote">「兵器的存在意義在於執行與輸出，而非被動鏽蝕。」</p>
+        </div>
+        <button class="dialog-confirm" data-boot-close type="button">確認啟動 / ACKNOWLEDGE</button>
+      </div>
+    </dialog>
+  </body>
+</html>
