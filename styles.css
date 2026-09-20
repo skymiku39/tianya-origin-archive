@@ -1396,6 +1396,10 @@ footer p {
     display: none;
   }
 
+  .hero-image {
+    background-position: 68% center;
+  }
+
   .hero-content {
     padding-left: 7vw;
   }
