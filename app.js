@@ -48,22 +48,58 @@ bootDialog.addEventListener('cancel', () => {
   body.classList.remove('modal-open');
 });
 
-document.querySelectorAll('.core-tab').forEach((tab) => {
-  tab.addEventListener('click', () => {
-    const target = tab.dataset.core;
-    document.querySelectorAll('.core-tab').forEach((item) => {
-      const active = item === tab;
-      item.classList.toggle('active', active);
-      item.setAttribute('aria-selected', String(active));
-    });
+const coreTabList = document.querySelector('.core-tabs');
+const coreTabs = [...document.querySelectorAll('.core-tab')];
+const corePanels = [...document.querySelectorAll('.core-panel')];
+const compactCoreTabs = window.matchMedia('(max-width: 760px)');
 
-    document.querySelectorAll('.core-panel').forEach((panel) => {
-      const active = panel.id === `panel-${target}`;
-      panel.classList.toggle('active', active);
-      panel.hidden = !active;
-    });
+function updateCoreTabOrientation() {
+  coreTabList.setAttribute('aria-orientation', compactCoreTabs.matches ? 'horizontal' : 'vertical');
+}
+
+function activateCoreTab(selectedTab, moveFocus = false) {
+  const target = selectedTab.dataset.core;
+
+  coreTabs.forEach((tab) => {
+    const active = tab === selectedTab;
+    tab.classList.toggle('active', active);
+    tab.setAttribute('aria-selected', String(active));
+    tab.tabIndex = active ? 0 : -1;
   });
+
+  corePanels.forEach((panel) => {
+    const active = panel.id === `panel-${target}`;
+    panel.classList.toggle('active', active);
+    panel.hidden = !active;
+  });
+
+  if (moveFocus) selectedTab.focus();
+}
+
+coreTabs.forEach((tab) => {
+  tab.addEventListener('click', () => activateCoreTab(tab));
 });
+
+coreTabList.addEventListener('keydown', (event) => {
+  const activeIndex = coreTabs.indexOf(document.activeElement);
+  if (activeIndex < 0) return;
+
+  const forwardKey = compactCoreTabs.matches ? 'ArrowRight' : 'ArrowDown';
+  const backwardKey = compactCoreTabs.matches ? 'ArrowLeft' : 'ArrowUp';
+  let nextIndex = null;
+
+  if (event.key === forwardKey) nextIndex = (activeIndex + 1) % coreTabs.length;
+  if (event.key === backwardKey) nextIndex = (activeIndex - 1 + coreTabs.length) % coreTabs.length;
+  if (event.key === 'Home') nextIndex = 0;
+  if (event.key === 'End') nextIndex = coreTabs.length - 1;
+
+  if (nextIndex === null) return;
+  event.preventDefault();
+  activateCoreTab(coreTabs[nextIndex], true);
+});
+
+updateCoreTabOrientation();
+compactCoreTabs.addEventListener('change', updateCoreTabOrientation);
 
 document.querySelectorAll('.timeline-trigger').forEach((trigger) => {
   trigger.addEventListener('click', () => {

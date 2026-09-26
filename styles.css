@@ -553,6 +553,16 @@ h2 em {
   color: var(--muted);
 }
 
+.designation-note {
+  position: relative;
+  z-index: 1;
+  max-width: 390px;
+  margin: 12px 0 0;
+  color: #78888b;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
 .barcode {
   position: absolute;
   bottom: 28px;
@@ -777,9 +787,10 @@ h2 em {
 
 .core-sphere strong {
   font-family: var(--mono);
-  font-size: 30px;
+  font-size: 21px;
   font-weight: 400;
   line-height: 1.2;
+  letter-spacing: 0.04em;
 }
 
 .core-node {
@@ -883,6 +894,42 @@ h2 em {
 }
 
 .link-rules p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.operation-boundaries {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 26px;
+  border: 1px solid var(--line);
+  background: rgba(8, 11, 13, 0.58);
+}
+
+.operation-boundaries article {
+  padding: 28px 26px;
+}
+
+.operation-boundaries article + article {
+  border-left: 1px solid var(--line);
+}
+
+.operation-boundaries span {
+  color: var(--amber);
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.1em;
+}
+
+.operation-boundaries h3 {
+  margin: 12px 0 8px;
+  font-family: var(--display);
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.operation-boundaries p {
   margin: 0;
   color: var(--muted);
   font-size: 14px;
@@ -1430,6 +1477,15 @@ footer p {
     border-top: 1px solid var(--line);
   }
 
+  .operation-boundaries {
+    grid-template-columns: 1fr;
+  }
+
+  .operation-boundaries article + article {
+    border-top: 1px solid var(--line);
+    border-left: 0;
+  }
+
   .failure-chain {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -1576,6 +1632,10 @@ footer p {
 
   .core-panel {
     padding: 36px 24px;
+  }
+
+  .operation-boundaries article {
+    padding: 24px 20px;
   }
 
   .link-rules,

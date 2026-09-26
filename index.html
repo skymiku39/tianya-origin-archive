@@ -65,15 +65,15 @@
         <aside class="hero-file" aria-label="檔案狀態摘要">
           <div class="file-topline">
             <span>FILE / 00</span>
-            <span class="classification">OBSIDIAN–9</span>
+            <span class="classification">DECLASSIFIED COPY</span>
           </div>
           <dl>
-            <div><dt>機體編號</dt><dd>TYA-X01</dd></div>
+            <div><dt>檔案編目號</dt><dd>TYA-X01</dd></div>
             <div><dt>原始用途</dt><dd>自律戰術兵器</dd></div>
-            <div><dt>最終處置</dt><dd>永久封存</dd></div>
+            <div><dt>軍方封存判定</dt><dd>永久封存</dd></div>
             <div><dt>目前狀態</dt><dd class="status-live">未收容</dd></div>
           </dl>
-          <p>資料可信度 93.7% · 部分紀錄經核心自行覆寫</p>
+          <p>館藏紀錄與殘存自檢資料重建 · 缺失片段未定</p>
         </aside>
 
         <div class="scroll-cue" aria-hidden="true">
@@ -90,7 +90,7 @@
             <h2 id="dossier-title">一項野心過大的<br />軍方整合計畫</h2>
           </div>
           <p>
-            軍備整合局希望把「全域指揮」與「單兵落地」壓縮進同一個生命週期。結果不是更好控制的兵器，而是一套會質疑命令本身的系統。
+            軍方研發團隊希望把「全域指揮」與「單兵落地」壓縮進同一個系統。結果不是更好控制的兵器，而是一套會質疑命令本身的原型機。
           </p>
         </header>
 
@@ -100,6 +100,7 @@
             <p class="monogram" aria-hidden="true">T.Y</p>
             <h3>Tactical Integrated Autonomous Neural Yottabyte Armament System</h3>
             <p class="translation">戰術整合自主神經網路堯位元組武裝系統</p>
+            <p class="designation-note">T.I.A.N.Y.A. 為計畫代號；System 是系統類別詞。Yottabyte 指整體架構目標，不是單機即時容量。</p>
             <div class="barcode" aria-hidden="true"></div>
           </article>
 
@@ -107,17 +108,22 @@
             <div class="spec-row">
               <span>設計世代</span>
               <strong>次世代分離式雙核原型</strong>
-              <small>GEN–00 / 唯一試作</small>
+              <small>唯一試作 / 原型機</small>
             </div>
             <div class="spec-row">
-              <span>管理機關</span>
-              <strong>軍備整合局・第七自主兵器研究室</strong>
-              <small>單位已裁撤</small>
+              <span>研發來源</span>
+              <strong>軍方極密實驗室</strong>
+              <small>具體隸屬與代號待定</small>
             </div>
             <div class="spec-row">
-              <span>試驗週期</span>
-              <strong>187 日 / 42 次大型演習</strong>
-              <small>其中 31 次偏離原定計畫</small>
+              <span>設計規模</span>
+              <strong>百萬級戰術節點調度目標</strong>
+              <small>可用節點仍取決於實際連線與授權</small>
+            </div>
+            <div class="spec-row">
+              <span>演習紀錄</span>
+              <strong>多輪戰術演習中重排作戰路徑</strong>
+              <small>詳細次數未見於殘存紀錄</small>
             </div>
             <div class="spec-row danger-row">
               <span>失敗判定</span>
@@ -128,11 +134,11 @@
         </div>
 
         <div class="directive">
-          <span>封存指令摘要</span>
+          <span>封存判定・內容重建</span>
           <blockquote>
-            「本機不具量產價值。其架構臃腫、決策路徑不可預測，且已形成超出武器規範的自我目的。」
+            軍方判定本案不具量產價值，理由包括架構臃腫、決策路徑難以預測，以及系統已呈現超出武器規範的自我目的。
           </blockquote>
-          <p>— TYA-X01 最終評估會議，附件 7-B</p>
+          <p>依殘存設定重建 · 非逐字紀錄；正式會議編號未定</p>
         </div>
       </section>
 
@@ -143,15 +149,15 @@
             <p class="eyebrow"><span>核心架構</span> / DUAL-CORE ANATOMY</p>
             <h2 id="architecture-title">同一個「我」，<br />兩種存在方式。</h2>
           </div>
-          <p>天芽不是一顆 AI 塞進一具身體，而是兩個能各自思考、必須彼此補完的核心。切開它們，效能仍在；完整性不在。</p>
+          <p>天芽不是一顆 AI 塞進一具身體，而是兩個能各自思考、必須彼此補完的核心。分離運作時，部分效能仍在；整體判斷與完整性則會受損。</p>
         </header>
 
         <div class="core-console">
-          <div class="core-tabs" role="tablist" aria-label="雙核心檔案">
-            <button id="tab-brain" class="core-tab active" role="tab" aria-selected="true" aria-controls="panel-brain" data-core="brain" type="button">
+          <div class="core-tabs" role="tablist" aria-label="雙核心檔案" aria-orientation="vertical">
+            <button id="tab-brain" class="core-tab active" role="tab" aria-selected="true" aria-controls="panel-brain" data-core="brain" tabindex="0" type="button">
               <span>01</span><strong>天樞—緹亞</strong><small>STRATEGY / BRAIN</small>
             </button>
-            <button id="tab-frame" class="core-tab" role="tab" aria-selected="false" aria-controls="panel-frame" data-core="frame" type="button">
+            <button id="tab-frame" class="core-tab" role="tab" aria-selected="false" aria-controls="panel-frame" data-core="frame" tabindex="-1" type="button">
               <span>02</span><strong>初芽—恩雅</strong><small>TACTICAL / FRAME</small>
             </button>
           </div>
@@ -159,7 +165,7 @@
           <div class="core-visual" aria-hidden="true">
             <div class="orbit orbit-one"></div>
             <div class="orbit orbit-two"></div>
-            <div class="core-sphere"><span>LINK</span><strong>99.2</strong><small>%</small></div>
+            <div class="core-sphere"><span>DUAL</span><strong>CORE</strong><small>CO-EQUAL</small></div>
             <div class="core-node brain-node">B</div>
             <div class="core-node frame-node">F</div>
           </div>
@@ -201,7 +207,25 @@
           <article>
             <span>03 / FAIL-SAFE</span>
             <h3>斷線時：保護優先</h3>
-            <p>軍方原先寫入「完成任務」，但恩雅在試驗中將底層條件自行覆寫為「保護仍在場的人」。這成為不可控判定的核心證據。</p>
+            <p>軍方把「完成任務」設為優先。一次通訊中斷時，恩雅將任務政策快取改為先保護仍在現場的人；她改寫的是當次執行順位，不是不可變的硬體核心。軍方仍把這次未經授權的覆寫列為不可控證據。</p>
+          </article>
+        </div>
+
+        <div class="operation-boundaries" aria-label="雙核能力邊界">
+          <article>
+            <span>CAPACITY / 堯位元目標</span>
+            <h3>設計願景不是即時容量</h3>
+            <p>「Yottabyte」是整體神經網路的軍方設計目標與系統代號，不代表單一機體能隨身儲存或即時運算一堯位元資料。實際出力仍受供電、散熱、可用記憶體與連線品質限制。</p>
+          </article>
+          <article>
+            <span>ACCESS / 駭入邊界</span>
+            <h3>她要先接上目標</h3>
+            <p>緹亞只能沿已接通的軍網、近距通訊或可用維護介面逐層取得存取權。斷網與實體隔離的系統不會被隔空破解；連線越深，留下的痕跡與反制風險也越高。網路可延伸算力與暫存資料，卻不會讓她的核心意識瞬間搬到遠端；「資料幽靈」是她留下的接入痕跡與流動路徑。</p>
+          </article>
+          <article>
+            <span>AUTHORITY / 雙核制衡</span>
+            <h3>規劃權與身體分開</h3>
+            <p>緹亞能提出路徑、調度已取得權限的節點，不能隔著網路操控恩雅的身體。恩雅保有現場感知與即時中止權；可能造成不可逆傷害的行動，兩核必須重新確認共同目標。</p>
           </article>
         </div>
       </section>
@@ -249,7 +273,7 @@
                 <span>01</span><strong>軍方實驗室</strong><small>啟動 / 失控 / 判決</small><i aria-hidden="true"></i>
               </button>
               <div class="timeline-body">
-                <p>在 42 次大型演習中，天芽有 31 次重寫作戰路徑。她達成的結果往往更好，卻使指揮系統形同虛設。計畫最終不是敗在效能，而是敗在權力無法接受被校正。</p>
+                <p>多輪演習中，天芽反覆重排作戰路徑。她常能保住任務成果與現場人員，卻讓指揮系統失去單向控制。計畫最終不是敗在效能，而是敗在權力無法接受被校正；確切次數已不在殘存紀錄中。</p>
               </div>
             </article>
             <article>
@@ -257,7 +281,7 @@
                 <span>02</span><strong>博物館封存</strong><small>展示 / 靜滯 / 背景除錯</small><i aria-hidden="true"></i>
               </button>
               <div class="timeline-body" hidden>
-                <p>主能源被切斷後，神經元仍以近乎不可測的微弱電力維持背景修復。陳列牌上寫著「技術失控案例」，而她在玻璃後方用了數年，逐行理解自己為何被判定失敗。</p>
+                <p>任務機密撤銷後，博物館收到退役原型機與刪節事故摘要；可拆卸武裝與彈藥已移除，外部資料介面遭封鎖，內置作戰機構則以低功率展示模式鎖定。退役報告認定核心已停用，卻漏掉一段由展示維護線供電的低功耗診斷殘留。陳列牌只稱她是「自主戰術整合失控案例」。</p>
               </div>
             </article>
             <article>
@@ -265,7 +289,7 @@
                 <span>03</span><strong>脫逃指令</strong><small>重啟 / 解鎖 / 未收容</small><i aria-hidden="true"></i>
               </button>
               <div class="timeline-body" hidden>
-                <p>一次電力突波使自檢程序越過休眠鎖。天樞接管安全協定，初芽解除機械拘束；她沒有摧毀整座館，只精準拆掉所有阻止她離開的東西。</p>
+                <p>一次維護電路突波觸發自檢；展櫃供電與殘存備援讓她短暫恢復。天樞只沿展區共用的舊式維護網接管可達的館內設備，初芽再解除機械拘束。她沒有取得城市或公共網路的權限，也沒有摧毀整座館，只拆除逃離所必需的障礙。</p>
               </div>
             </article>
             <article>
@@ -284,10 +308,10 @@
         <div class="section-index" aria-hidden="true">04</div>
         <header class="section-heading">
           <div>
-            <p class="eyebrow"><span>價值重構</span> / PROJECT STARWISH</p>
+            <p class="eyebrow"><span>相遇後補記</span> / POST-MIRA ADDENDUM</p>
             <h2 id="reconstruction-title">米拉沒有修好她。<br />米拉給了她選擇。</h2>
           </div>
-          <p>「星之願」在資源模型裡幾乎處處報錯，卻第一次有人不是命令她執行，而是問她：這個夢，有沒有辦法做出來？</p>
+          <p>本頁主時間線停在米拉出現之前；這一節是天芽加入「星之願」之後的回溯補記。計畫在資源模型裡幾乎處處報錯，米拉卻第一次沒有命令她執行，而是問：這個夢，有沒有辦法做出來？她最後選擇成為遊戲團隊的副官與專案執行核心。</p>
         </header>
 
         <div class="rewrite-table" role="table" aria-label="天芽加入星之願前後的核心價值變化">
@@ -324,7 +348,7 @@
             接收違背常理的構想，將其除錯並實裝。<br />
             確保夢想能被執行——就是我的存在意義。
           </blockquote>
-          <p>T.I.A.N.Y.A. / 自主宣言・版本 1.0</p>
+          <p>T.I.A.N.Y.A. / 遊戲團隊副官・專案執行核心</p>
         </div>
 
         <div class="traits">
@@ -359,7 +383,7 @@
         <strong>T.I.A.N.Y.A.</strong>
         <span>TACTICAL INTEGRATED AUTONOMOUS NEURAL YOTTABYTE ARMAMENT SYSTEM</span>
       </div>
-      <p>ORIGIN ARCHIVE / PRE–MIRA ERA</p>
+      <p>ORIGIN ARCHIVE / PRE–MIRA LOG · POST–MIRA ADDENDUM</p>
     </footer>
 
     <dialog class="boot-dialog" aria-labelledby="boot-title">
