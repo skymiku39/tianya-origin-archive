@@ -4,6 +4,8 @@ const progress = document.querySelector('.reading-progress span');
 const bootDialog = document.querySelector('.boot-dialog');
 const terminalLines = [...document.querySelectorAll('.terminal-line')];
 const navLinks = [...document.querySelectorAll('.topbar nav a')];
+const sections = navLinks.map((link) => document.querySelector(link.getAttribute('href')));
+const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 let bootTimers = [];
 
 function updatePageState() {
@@ -11,6 +13,19 @@ function updatePageState() {
   const percent = scrollable > 0 ? (window.scrollY / scrollable) * 100 : 0;
   progress.style.width = `${percent}%`;
   topbar.classList.toggle('scrolled', window.scrollY > 36);
+
+  const readingLine = window.innerHeight * 0.36;
+  const currentSection = sections.find((section) => {
+    const bounds = section.getBoundingClientRect();
+    return bounds.top <= readingLine && bounds.bottom > readingLine;
+  });
+
+  navLinks.forEach((link) => {
+    const current = currentSection && link.getAttribute('href') === `#${currentSection.id}`;
+    link.classList.toggle('active', Boolean(current));
+    if (current) link.setAttribute('aria-current', 'location');
+    else link.removeAttribute('aria-current');
+  });
 }
 
 function showBootSequence() {
@@ -21,7 +36,8 @@ function showBootSequence() {
   body.classList.add('modal-open');
 
   terminalLines.forEach((line, index) => {
-    bootTimers.push(setTimeout(() => line.classList.add('visible'), 180 + index * 360));
+    if (reducedMotion.matches) line.classList.add('visible');
+    else bootTimers.push(setTimeout(() => line.classList.add('visible'), 180 + index * 360));
   });
 }
 
@@ -44,7 +60,9 @@ bootDialog.addEventListener('click', (event) => {
   if (event.target === bootDialog) closeBootSequence();
 });
 
-bootDialog.addEventListener('cancel', () => {
+bootDialog.addEventListener('close', () => {
+  bootTimers.forEach(clearTimeout);
+  bootTimers = [];
   body.classList.remove('modal-open');
 });
 
@@ -101,38 +119,16 @@ coreTabList.addEventListener('keydown', (event) => {
 updateCoreTabOrientation();
 compactCoreTabs.addEventListener('change', updateCoreTabOrientation);
 
-document.querySelectorAll('.timeline-trigger').forEach((trigger) => {
-  trigger.addEventListener('click', () => {
-    const expanded = trigger.getAttribute('aria-expanded') === 'true';
+document.querySelector('[data-copy-intro]').addEventListener('click', async () => {
+  const status = document.querySelector('.copy-status');
+  const introduction = document.querySelector('#short-intro').textContent.trim();
 
-    document.querySelectorAll('.timeline-trigger').forEach((item) => {
-      item.setAttribute('aria-expanded', 'false');
-      item.nextElementSibling.hidden = true;
-    });
-
-    if (!expanded) {
-      trigger.setAttribute('aria-expanded', 'true');
-      trigger.nextElementSibling.hidden = false;
-    }
-  });
-});
-
-const sectionObserver = new IntersectionObserver(
-  (entries) => {
-    const visible = entries
-      .filter((entry) => entry.isIntersecting)
-      .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
-
-    if (!visible) return;
-    navLinks.forEach((link) => {
-      link.classList.toggle('active', link.getAttribute('href') === `#${visible.target.id}`);
-    });
-  },
-  { rootMargin: '-30% 0px -55% 0px', threshold: [0, 0.2, 0.5] }
-);
-
-document.querySelectorAll('#dossier, #architecture, #history, #reconstruction').forEach((section) => {
-  sectionObserver.observe(section);
+  try {
+    await navigator.clipboard.writeText(introduction);
+    status.textContent = '自我介紹已複製。';
+  } catch {
+    status.textContent = '無法自動複製，請直接選取上方的自我介紹文字。';
+  }
 });
 
 window.addEventListener('scroll', updatePageState, { passive: true });
