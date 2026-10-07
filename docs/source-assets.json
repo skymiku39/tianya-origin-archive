@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "date": "2026-10-07",
+  "policy": "Use creator originals only. No generated character or environment artwork is used on the site. Source folder is read-only.",
+  "assets": [
+    {
+      "file": "assets/tianya-pixel-portrait.png",
+      "source": "image.png",
+      "method": "byte-for-byte copy",
+      "width": 1920,
+      "height": 1080,
+      "sha256": "5746043278965D75441051E24FBF084509A3DA8D31B02660900CD3E44274A7D9",
+      "source_sha256": "5746043278965D75441051E24FBF084509A3DA8D31B02660900CD3E44274A7D9"
+    },
+    {
+      "file": "assets/tianya-stream-room.png",
+      "source": "260709_stream.png",
+      "method": "byte-for-byte copy",
+      "width": 1920,
+      "height": 1080,
+      "sha256": "9F454BB59855076AC80721DC166AFDD13D59A8984BBF654776880FCC92E2ADF4",
+      "source_sha256": "9F454BB59855076AC80721DC166AFDD13D59A8984BBF654776880FCC92E2ADF4"
+    },
+    {
+      "file": "assets/enya-original-still.png",
+      "source": "260727_skymiku_v02.gif",
+      "method": "ffmpeg first-frame extraction; no crop, scaling, redraw or generative processing",
+      "width": 1080,
+      "height": 1080,
+      "sha256": "5C290905AE7FCF598F084B2A18A5847C40407EC2FC12329E03EF88CBA829F1BA",
+      "source_sha256": "3F96345A76B39B271531D90DE4D86F2C1F1372DBD19959B161A9462101CB5E99",
+      "decoded_first_frame_rgba_md5": "3ee26ff644e5099172b087f2077ceb46"
+    },
+    {
+      "file": "assets/tia-original-still.png",
+      "source": "tutu.gif",
+      "method": "ffmpeg first-frame extraction; no crop, scaling, redraw or generative processing",
+      "width": 256,
+      "height": 264,
+      "sha256": "02DD836DFCCD5D0E00849FD97C691087E8CDB400FCFD00A51E59AD42D6FC6D9A",
+      "source_sha256": "9EDC6E9143D7B4B2DB6D76BB301A203AB2008C226DAF4415059791393376AB59",
+      "decoded_first_frame_rgba_md5": "9d99d3377a7c76c11a1136b99101f020"
+    }
+  ],
+  "extraction_command": "ffmpeg -hide_banner -loglevel error -n -i <original.gif> -frames:v 1 -update 1 <new-output.png>",
+  "source_folder_audit": {
+    "algorithm": "SHA256",
+    "file_count": 53,
+    "verification_status": "All 53 files match the read-only baseline after implementation. Both extracted PNGs also match the decoded RGBA pixels of their original GIF first frames.",
+    "changed": 0,
+    "missing": 0,
+    "added": 0
+  }
+}

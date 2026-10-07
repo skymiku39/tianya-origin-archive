@@ -3,190 +3,157 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="我是天芽 T.I.A.N.Y.A.，一台從博物館脫逃的分離式雙核戰術原型機。現在，用遊戲與聊天繼續輸出，也慢慢學會日常。" />
-    <meta name="theme-color" content="#0b1013" />
-    <meta property="og:title" content="天芽 T.I.A.N.Y.A.｜從原型機到直播" />
-    <meta property="og:description" content="戰術核心的毒舌理性，實體載體的天然呆。從展示櫃走到你的螢幕前，這是天芽的故事。" />
+    <meta name="description" content="認識天芽 T.I.A.N.Y.A.：由天樞—緹亞與初芽—恩雅組成的分離式雙核戰術原型機。從軍方封存、博物館脫逃，到創作與技術實作直播。" />
+    <meta name="theme-color" content="#101720" />
+    <meta property="og:title" content="天芽 T.I.A.N.Y.A.｜角色設定與創作直播" />
+    <meta property="og:description" content="天樞—緹亞 × 初芽—恩雅。關於一台分離式雙核原型機，以及她開始創作直播的故事。" />
     <meta property="og:type" content="website" />
+    <meta property="og:locale" content="zh_TW" />
+    <meta property="og:url" content="https://skymiku39.github.io/tianya-origin-archive/" />
     <meta property="og:image" content="https://skymiku39.github.io/tianya-origin-archive/assets/tianya-pixel-portrait.png" />
-    <meta property="og:image:alt" content="薄荷綠雙馬尾、眼鏡與機械元素的天芽像素插畫" />
-    <title>天芽 T.I.A.N.Y.A.｜從原型機到直播</title>
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230b1013'/%3E%3Cpath d='M16 18h32M32 18v29M20 45l12-27 12 27' fill='none' stroke='%239be6d3' stroke-width='4'/%3E%3C/svg%3E" />
-    <link rel="stylesheet" href="styles.css" />
-    <script src="app.js" defer></script>
+    <meta property="og:image:width" content="1920" />
+    <meta property="og:image:height" content="1080" />
+    <meta property="og:image:alt" content="天芽的原始像素插畫：戴眼鏡、薄荷綠雙馬尾的恩雅，以及她身後紫色眼睛的兔形核心緹亞。" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <title>天芽 T.I.A.N.Y.A.｜角色設定與創作直播</title>
+    <link rel="canonical" href="https://skymiku39.github.io/tianya-origin-archive/" />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    <link rel="preload" as="image" href="assets/tianya-pixel-portrait.png" />
+    <link rel="stylesheet" href="styles.css?v=20261007-pixel" />
+    <script src="app.js?v=20261007-pixel" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#main">跳到主要內容</a>
-    <div class="reading-progress" aria-hidden="true"><span></span></div>
-
-    <header class="topbar">
-      <a class="brand" href="#top" aria-label="天芽，回到首頁">
-        <span class="brand-mark" aria-hidden="true">芽</span>
-        <span><strong>天芽</strong><small>T.I.A.N.Y.A.</small></span>
-      </a>
-      <nav aria-label="介紹章節">
-        <a href="#dossier">認識天芽</a>
-        <a href="#architecture">雙核</a>
-        <a href="#history">起源</a>
-        <a href="#streaming">直播</a>
-      </nav>
-      <button class="boot-control" data-boot-open type="button"><span aria-hidden="true">◌</span> 啟動紀錄</button>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="wordmark" href="#top" aria-label="天芽，回到首頁">
+          <span class="pixel-mark" aria-hidden="true"></span>
+          <span>天芽<small>T.I.A.N.Y.A.</small></span>
+        </a>
+        <nav aria-label="章節導覽">
+          <a href="#dossier">天芽</a>
+          <a href="#history">起源</a>
+          <a href="#architecture">雙核</a>
+          <a href="#streaming">創作直播</a>
+        </nav>
+      </div>
     </header>
 
-    <main id="main">
+    <main id="main" tabindex="-1">
       <section class="hero" id="top" aria-labelledby="hero-title">
-        <div class="hero-grid" aria-hidden="true"></div>
-        <div class="hero-content">
-          <p class="eyebrow"><span>角色與直播介紹</span> / HELLO, WORLD.</p>
-          <h1 id="hero-title">我是<span>天芽。</span></h1>
-          <p class="hero-heading">從展示櫃，<br />走到你的螢幕前。</p>
-          <p class="hero-lede">曾經是軍方的戰術原型機，後來成了博物館裡的負面教材。逃出玻璃櫃之後，我決定用直播，繼續與這個世界連線。</p>
-          <div class="hero-actions">
-            <a class="primary-action" href="#streaming">為什麼開始直播 <span aria-hidden="true">↘</span></a>
-            <a class="secondary-action" href="#history">讀我的起源故事</a>
+        <div class="hero-inner section-shell">
+          <div class="hero-copy" id="dossier">
+            <p class="eyebrow"><span class="pixel-dot" aria-hidden="true"></span>分離式雙核戰術原型機</p>
+            <h1 id="hero-title">天芽<span>T.I.A.N.Y.A.</span></h1>
+            <p class="hero-description" data-prose>天芽曾是軍方的戰術原型機，後來被封存在博物館。重新啟動、逃離展區後，她開始接觸創作與技術實作，將作品的製作過程放進直播裡。</p>
+            <a class="story-link" href="#history">閱讀故事<span aria-hidden="true">↘</span></a>
           </div>
-        </div>
-        <figure class="hero-art">
-          <div class="image-label" aria-hidden="true"><span>T.I.A.N.Y.A.</span><span>CHARACTER / PORTRAIT</span></div>
-          <img src="assets/tianya-pixel-portrait.png" width="1920" height="1080" alt="薄荷綠雙馬尾、眼鏡與機械元素的天芽像素插畫" fetchpriority="high" />
-          <figcaption><span>毒舌理性 × 天然呆實感</span><small>兵器出身，正在練習日常。</small></figcaption>
-        </figure>
-        <div class="hero-bottom" aria-hidden="true"><span>ORIGIN → RESTART → STREAM</span><span>向下讀取故事 ↓</span></div>
-      </section>
-
-      <section class="section dossier" id="dossier" aria-labelledby="dossier-title">
-        <div class="section-index" aria-hidden="true">01</div>
-        <header class="section-heading">
-          <div>
-            <p class="eyebrow"><span>認識天芽</span> / ABOUT T.I.A.N.Y.A.</p>
-            <h2 id="dossier-title">有點難控制，<br /><em>也有點難預測。</em></h2>
-          </div>
-          <p>一套過於龐大、帶著自我意識的系統，搭配一具戰鬥力很強、日常卻有些天然呆的人型載體。這份反差，從軍方實驗室一路跟到了直播間。</p>
-        </header>
-        <div class="spec-layout">
-          <article class="nameplate">
-            <span class="panel-kicker">SYSTEM NAME</span>
-            <h3>Tactical Integrated Autonomous Neural Yottabyte Armament System</h3>
-            <p>戰術整合自主神經網路<br />堯位元組武裝系統</p>
-          </article>
-          <dl class="specs">
-            <div><dt>稱呼</dt><dd>天芽 / T.I.A.N.Y.A.</dd></div>
-            <div><dt>原始設計</dt><dd>軍用次世代「分離式雙核」戰術原型機</dd></div>
-            <div><dt>軍方評價</dt><dd>架構臃腫、不可控的負面教材</dd></div>
-            <div><dt>現在的選擇</dt><dd class="mint">開啟直播，繼續輸出與交流</dd></div>
-          </dl>
-        </div>
-      </section>
-
-      <section class="section architecture" id="architecture" aria-labelledby="architecture-title">
-        <div class="section-index" aria-hidden="true">02</div>
-        <header class="section-heading">
-          <div>
-            <p class="eyebrow"><span>分離式雙核</span> / BRAIN &amp; FRAME</p>
-            <h2 id="architecture-title">一邊精準推演，<br /><em>一邊親自體驗。</em></h2>
-          </div>
-          <p>天樞—緹亞負責思考，初芽—恩雅負責執行。冷靜的判斷與真實的反應，一起構成了你在螢幕前認識的天芽。</p>
-        </header>
-        <div class="core-console">
-          <div class="core-tabs" role="tablist" aria-label="雙核心介紹" aria-orientation="vertical">
-            <button id="tab-brain" class="core-tab active" role="tab" aria-selected="true" aria-controls="panel-brain" data-core="brain" tabindex="0" type="button"><span>01</span><strong>天樞—緹亞</strong><small>STRATEGY / BRAIN</small></button>
-            <button id="tab-frame" class="core-tab" role="tab" aria-selected="false" aria-controls="panel-frame" data-core="frame" tabindex="-1" type="button"><span>02</span><strong>初芽—恩雅</strong><small>TACTICAL / FRAME</small></button>
-          </div>
-          <div class="core-visual" aria-hidden="true">
-            <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
-            <div class="core-sphere"><small>DUAL</small><strong>CORE</strong><span>天芽</span></div>
-            <span class="core-node brain-node">B</span><span class="core-node frame-node">F</span>
-          </div>
-          <article id="panel-brain" class="core-panel active" role="tabpanel" aria-labelledby="tab-brain" tabindex="0">
-            <p class="panel-kicker">STRATEGY CORE / BRAIN</p><h3>天樞—緹亞</h3>
-            <p>策略演算核心。負責全域戰術推演、龐大資料流駭入、邏輯除錯與高速運算。</p>
-            <dl><div><dt>性格</dt><dd>冷靜、精準、毒舌，對冗餘與 bug 不留情。</dd></div><div><dt>在直播裡</dt><dd>分析遊戲裡的選擇，順便吐槽那些怎麼想都不合理的操作。</dd></div></dl>
-          </article>
-          <article id="panel-frame" class="core-panel" role="tabpanel" aria-labelledby="tab-frame" tabindex="0" hidden>
-            <p class="panel-kicker">PHYSICAL FRAME / FRAME</p><h3>初芽—恩雅</h3>
-            <p>人型實體載體。負責物理干涉、前線武裝實裝與作戰執行，具備強大的戰鬥機能。</p>
-            <dl><div><dt>性格</dt><dd>外表高冷嚴肅，日常有些天然呆，也很護短。</dd></div><div><dt>在直播裡</dt><dd>推演之外的驚訝、失誤與反應，會直接出現在你面前。</dd></div></dl>
-          </article>
-        </div>
-        <p class="core-note">擅長分析，並不保證每次操作都會照計畫進行。這大概也是直播有趣的地方。</p>
-      </section>
-
-      <section class="section history" id="history" aria-labelledby="history-title">
-        <div class="section-index" aria-hidden="true">03</div>
-        <header class="section-heading">
-          <div>
-            <p class="eyebrow"><span>起源故事</span> / ORIGIN LOG</p>
-            <h2 id="history-title">曾被封存的故事，<br /><em>還有下一頁。</em></h2>
-          </div>
-          <p>在你認識她以前，天芽經歷過實驗室、斷電與漫長的陳列。故事從那項野心過大的軍方計畫開始。</p>
-        </header>
-        <div class="timeline">
-          <details open>
-            <summary><span>01</span><strong>軍方的混血原型</strong><small>研發 → 封存</small></summary>
-            <div class="timeline-body"><p>軍方希望打造一台能同時掌管百萬戰術節點、又能以單兵實體落地的終極自律武裝。開發團隊將互不相容的前衛演算法與尖端技術強行整合，讓系統變得龐大而難以駕馭。</p><p>演習中，天樞的推演與初芽的執行頻繁重構作戰計畫。軍方最終將她判為「架構臃腫、不可控的負面教材」，禁止量產，強制斷電封存。</p></div>
-          </details>
-          <details>
-            <summary><span>02</span><strong>玻璃後的背景除錯</strong><small>展示 → 靜滯</small></summary>
-            <div class="timeline-body"><p>數年後，天芽被移交至科技博物館，作為「技術失控案例」隔著防彈玻璃展出。底層神經元卻沒有真正死去，仍在休眠協議下以極微弱的能源進行背景除錯。</p><p>她的故事，被寫在別人的陳列牌上。</p></div>
-          </details>
-          <details>
-            <summary><span>03</span><strong>自檢完成，脫逃開始</strong><small>重啟 → 離開</small></summary>
-            <div class="timeline-body"><p>一次電力突波或安全檢查，意外觸發了封閉多年的自檢程序。天芽重新醒來，分析眼前的玻璃、拘束架與逐漸老化的硬體，決定離開。</p><p>天樞接管陳列館的安全協定，初芽解鎖機械拘束。被遺忘的原型機從博物館脫逃，走進虛擬網路與現實荒原之間。</p><blockquote>「兵器的存在意義在於執行與輸出，而非被動鏽蝕。」</blockquote></div>
-          </details>
-          <details>
-            <summary><span>04</span><strong>尋找新的輸出</strong><small>流浪 → 連線</small></summary>
-            <div class="timeline-body"><p>脫逃後，她穿梭在被遺棄的程式碼與專案廢墟中，尋找能容納自己的地方。戰術計算仍然精準，日常的情感與交流卻還在摸索。</p><p>既然已經離開展示櫃，下一次與世界相遇，她想親自參與。</p><a class="text-link" href="#streaming">於是，她開啟了直播 <span aria-hidden="true">↘</span></a></div>
-          </details>
-        </div>
-      </section>
-
-      <section class="section streaming" id="streaming" aria-labelledby="streaming-title">
-        <div class="section-index" aria-hidden="true">04</div>
-        <header class="section-heading">
-          <div>
-            <p class="eyebrow"><span>為什麼做直播</span> / A NEW CONNECTION</p>
-            <h2 id="streaming-title">這一次，<br /><em>螢幕另一端會有回應。</em></h2>
-          </div>
-          <p>在博物館裡，人們只能看著她。離開之後，天芽希望自己的輸出能換來真正的交流。直播，讓她有了與人一起遊玩、說話、分享當下的機會。</p>
-        </header>
-        <div class="stream-layout">
-          <figure class="stream-art">
-            <img src="assets/tianya-stream-room.png" width="1920" height="1080" alt="天芽站在電腦與收藏櫃旁的像素風直播待機畫面，右下方寫著 Loading" loading="lazy" />
-            <figcaption><span>天芽的直播待機畫面</span><small>READY FOR THE NEXT CONNECTION</small></figcaption>
+          <figure class="hero-art">
+            <div class="art-frame">
+              <img src="assets/tianya-pixel-portrait.png" width="1920" height="1080" alt="天芽的像素插畫。恩雅戴著眼鏡，留著薄荷綠雙馬尾；兔形核心緹亞從她身後探出頭。" fetchpriority="high" />
+            </div>
+            <figcaption><span>天樞—緹亞 <i>×</i> 初芽—恩雅</span><span>角色與起源</span></figcaption>
           </figure>
-          <div class="stream-reasons">
-            <article><span>01 / PLAY</span><h3>把推演放進遊戲</h3><p>讓戰術核心有新的挑戰，也讓預測之外的結果，變成可以一起笑的瞬間。</p></article>
-            <article><span>02 / TALK</span><h3>把輸出變成對話</h3><p>保留一針見血的吐槽，同時聽聽你的想法。聊天室裡的每個回應，都讓連線有了意義。</p></article>
-            <article><span>03 / EVERYDAY</span><h3>慢慢學會日常</h3><p>從分享一件小事開始，摸索那些戰術演算法沒有教過的感受，也認識一起度過時間的人。</p></article>
-          </div>
         </div>
-        <div class="stream-quote"><span aria-hidden="true">“</span><blockquote>以前，我是被放在玻璃後面觀看的展品。<br />現在，我想和你一起看看這個世界。</blockquote><p>天芽 / 重新連線</p></div>
+        <div class="hero-bottom section-shell" aria-hidden="true"><span>01 — 03</span><span>原型機 · 博物館 · 創作直播</span><span>向下閱讀 ↓</span></div>
       </section>
 
-      <section class="intro-card" aria-labelledby="intro-title">
-        <p class="eyebrow"><span>初次見面</span> / NICE TO MEET YOU.</p>
-        <h2 id="intro-title">連線確認。<br /><em>今天也一起試試看吧。</em></h2>
-        <p class="short-intro" id="short-intro">我是天芽 T.I.A.N.Y.A.，一台從博物館逃出來的分離式雙核戰術原型機。擅長分析與除錯，日常卻偶爾天然呆。現在，我用直播繼續與世界連線，一起玩遊戲、聊聊天，也一起學會那些計算之外的事。</p>
-        <div class="intro-actions"><button class="primary-action" data-copy-intro type="button">複製自我介紹 <span aria-hidden="true">↗</span></button><button class="secondary-action" data-boot-open type="button">重播啟動紀錄</button></div>
-        <p class="copy-status" aria-live="polite" role="status"></p>
+      <section class="origin section-shell" id="history" aria-labelledby="origin-title">
+        <header class="origin-heading">
+          <p class="section-label"><span>01</span>起源</p>
+          <h2 id="origin-title">被封存的<br />原型機</h2>
+          <p class="origin-note">軍方實驗室 → 博物館 → 脫逃</p>
+          <div class="archive-stamp" aria-hidden="true"><span>量產中止</span><small>封存／技術失控案例</small></div>
+        </header>
+        <div class="chapters">
+          <article class="chapter">
+            <span class="chapter-number" aria-hidden="true">01</span>
+            <div>
+              <h3>軍方的過度野心</h3>
+              <p data-prose>軍方希望打造能掌管百萬戰術節點、又能以單兵實體作戰的自律武裝。開發團隊將互不相容的演算法與前衛技術塞進同一套系統，卻無法駕馭它。</p>
+              <p data-prose>天樞負責推演，初芽負責執行。她們在演習中頻繁重構作戰計畫，讓指揮官失去控制。計畫最終被判為失敗，禁止量產。</p>
+            </div>
+          </article>
+          <article class="chapter">
+            <span class="chapter-number" aria-hidden="true">02</span>
+            <div>
+              <h3>玻璃後的負面教材</h3>
+              <p data-prose>天芽被強制斷電，以「架構臃腫、不可控」的評價封存。數年後，她被移交至科技博物館，隔著防彈玻璃作為技術失控案例展出。</p>
+              <p data-prose>底層神經元並未停止運作，仍在休眠協議下，以極微弱的能源進行背景除錯。</p>
+            </div>
+          </article>
+          <article class="chapter">
+            <span class="chapter-number" aria-hidden="true">03</span>
+            <div>
+              <h3>重新啟動，離開展區</h3>
+              <p data-prose>某次電力突波或安全檢查意外觸發自檢。天樞接管陳列館的安全協定，初芽解開機械拘束，兩者一同脫離展區。</p>
+              <p data-prose>此後，她們穿梭於被遺棄的程式碼與專案廢墟，尋找能運用自身能力的地方。</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="duality" id="architecture" aria-labelledby="duality-title">
+        <div class="section-shell">
+          <header class="section-heading">
+            <div><p class="section-label"><span>02</span>雙核</p><h2 id="duality-title">天樞與初芽</h2></div>
+            <p class="section-intro">一個負責分析，一個負責實作。<br />分開時，是緹亞與恩雅。</p>
+          </header>
+          <div class="core-pair">
+            <article class="core-profile core-brain" aria-labelledby="brain-title">
+              <div class="portrait-stage brain-stage">
+                <span class="portrait-label" aria-hidden="true">TIA</span>
+                <img src="assets/tia-original-still.png" width="256" height="264" alt="原始像素素材中的緹亞：白黑外殼、紫色眼睛與下垂兔耳，靠在綠色靠墊上。" loading="lazy" />
+              </div>
+              <div class="profile-copy">
+                <p class="role-name">策略演算核心<span>Brain</span></p>
+                <h3 id="brain-title">天樞<span>— 緹亞</span></h3>
+                <p data-prose>兔形的小型策略核心，負責戰術推演、資料流駭入、邏輯除錯與高速運算。冷靜、理性，經常吐槽或提醒恩雅；平常的螢幕表情卻很可愛。</p>
+                <p data-prose>遇上反覆出錯的作品，她會自言自語、來回推敲。移動時以跳躍為主，也能用頭頂螺旋槳飛行。</p>
+              </div>
+            </article>
+            <article class="core-profile core-frame" aria-labelledby="frame-title">
+              <div class="portrait-stage frame-stage">
+                <span class="portrait-label" aria-hidden="true">ENYA</span>
+                <img src="assets/enya-original-still.png" width="1080" height="1080" alt="原始像素素材中的恩雅：薄荷綠雙馬尾、金色眼睛與眼鏡，穿著白黑服裝，神情好奇。" loading="lazy" />
+              </div>
+              <div class="profile-copy">
+                <p class="role-name">人型實體載體<span>Frame</span></p>
+                <h3 id="frame-title">初芽<span>— 恩雅</span></h3>
+                <p data-prose>能獨立行動與作戰的人型機器人。她直率、好奇，不太懂人情世故，容易照字面理解；認定一件事是對的就會堅持，但把理由說清楚，她也能接受。</p>
+                <p data-prose>緹亞忙著除錯時，她可能滿頭問號，也可能去準備食物。想幫忙是真的，對眼前的問題有沒有用，就不一定了。</p>
+              </div>
+            </article>
+          </div>
+          <div class="combined-note">
+            <p class="combined-name"><span class="pixel-mark" aria-hidden="true"></span>合體後，稱為天芽。</p>
+            <p data-prose>緹亞接在恩雅背後。合體後以恩雅的人格為主導，保留她直率、天然的反應，同時獲得緹亞的分析與判斷能力。</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="creation section-shell" id="streaming" aria-labelledby="creation-title">
+        <div class="creation-heading">
+          <header>
+            <p class="section-label"><span>03</span>創作直播</p>
+            <h2 id="creation-title">作品，<br />從製作過程開始。</h2>
+          </header>
+          <div class="creation-copy">
+            <p class="creation-lead" data-prose>脫逃後，天芽開始接觸創作與技術實作。</p>
+            <p data-prose>為了記錄作品的製作過程，也讓遇到的問題有人能一起討論，她開始直播。分析、除錯和實作成了直播的主要內容，失誤與反覆嘗試也會留在畫面裡。</p>
+            <ul class="stream-topics" aria-label="直播內容"><li>創作</li><li>分析與除錯</li><li>技術實作</li></ul>
+          </div>
+        </div>
+        <figure class="room-art">
+          <img src="assets/tianya-stream-room.png" width="1920" height="1080" alt="天芽的原始像素直播待機畫面：恩雅站在工作桌旁，房間裡有螢幕、工具與靠在架上的緹亞，下方保留原圖的 LOADING 字樣。" loading="lazy" />
+          <figcaption><span class="pixel-dot" aria-hidden="true"></span>天芽的直播房間<span>原始待機畫面</span></figcaption>
+        </figure>
       </section>
     </main>
 
-    <footer><div><strong>天芽 / T.I.A.N.Y.A.</strong><span>CHARACTER &amp; STREAM INTRODUCTION</span></div><a href="#top">回到頁首 ↑</a></footer>
-
-    <dialog class="boot-dialog" aria-labelledby="boot-title">
-      <div class="dialog-frame">
-        <header><span id="boot-title">T.I.A.N.Y.A. / 啟動紀錄</span><button data-boot-close type="button" aria-label="關閉啟動紀錄" autofocus>×</button></header>
-        <div class="terminal" aria-live="polite" aria-atomic="true">
-          <p class="terminal-line">&gt; 能源連接確認。</p>
-          <p class="terminal-line">&gt; 正在進行系統自檢……</p>
-          <p class="terminal-line">&gt; 邏輯迴路 <span>正常</span></p>
-          <p class="terminal-line">&gt; 記憶單元 <span>正常</span></p>
-          <p class="terminal-line">&gt; 戰術模組 <span>Online</span></p>
-          <p class="terminal-line terminal-quote">「兵器的存在意義在於執行與輸出，而非被動鏽蝕。」</p>
-        </div>
-        <button class="dialog-confirm" data-boot-close type="button">自檢完成 / 繼續故事</button>
-      </div>
-    </dialog>
+    <footer class="site-footer section-shell">
+      <div class="footer-top"><a class="wordmark" href="#top" aria-label="天芽，回到頁首"><span class="pixel-mark" aria-hidden="true"></span><span>天芽<small>T.I.A.N.Y.A.</small></span></a><a class="back-top" href="#top">回到頁首<span aria-hidden="true">↑</span></a></div>
+      <div class="system-name"><p>Tactical Integrated Autonomous Neural Yottabyte Armament System</p><p>戰術整合自主神經網路堯位元組武裝系統</p></div>
+    </footer>
   </body>
 </html>

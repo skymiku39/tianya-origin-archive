@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "publication": "Historical first-pass record only. The final pixel website uses none of these generated assets; local draft images are excluded from Git and publication.",
+  "date": "2026-10-07",
+  "review_status": "First-pass draft, not approved. Creator requested pixel art and corrected character construction and personality. Do not reuse the character prompts below as current specifications.",
+  "current_specification": "docs/CHARACTER-SPEC.md",
+  "historical_scope": "This manifest describes the rejected first-pass assets only. Current pixel previews and the creator's later rabbit-only image-reference authorization are recorded in docs/image-generation-pixel-preview.json.",
+  "method": "Built-in image_gen; text-to-image only; no reference image arguments",
+  "source_policy": "Original material folder is read-only. Images were inspected to describe the creator's character design in words. No original illustration, pose, layout, or artist style is submitted as an image reference.",
+  "sources": [
+    {
+      "file": "image.png",
+      "role": "Written appearance description of the two creator-owned characters"
+    },
+    {
+      "file": "直播相關.png",
+      "role": "Written mechanical-core appearance description"
+    },
+    {
+      "file": "直播相關2.png",
+      "role": "Written mechanical-core form description"
+    },
+    {
+      "file": "直播相關8.png",
+      "role": "Context only; no unconfirmed docking mechanics added"
+    }
+  ],
+  "characters": {
+    "tianya": "Combined identity of Tia and Enya",
+    "tia": "天樞—緹亞 / small strategy core",
+    "enya": "初芽—恩雅 / humanoid physical frame"
+  },
+  "assets": [
+    {
+      "id": "museum",
+      "filename": "museum-hall.png",
+      "transparent": false,
+      "prompt": "Use case: stylized-concept. Asset type: full-bleed cinematic science-fiction character website background, wide 16:9. Create an ORIGINAL anime feature-film background painting of a quiet old technology museum exhibition hall after hours. A tall empty reinforced-glass display enclosure and a restrained mechanical support frame stand in the middle-right distance, with a low display base, pale structural columns, layered glass reflections, subtle floor reflections, and a softly lit passage beyond. No occupant. Grounded industrial design and a convincing large interior, not a spaceship cockpit. Composition: low eye-level wide shot; leave the left 40 percent dark, calm and visually simple for HTML title text; the right foreground must be open for separately composited characters. Detailed architectural depth without clutter. Lighting: cool blue-gray ambient shadows, a restrained soft mint-white exhibition spotlight, very small warm amber light in the far corridor. Style: hand-painted anime movie background, beautifully resolved material surfaces, precise perspective, atmospheric depth, subtle painterly texture, restrained cinematic lighting. Palette: ink navy, graphite, desaturated slate, pale mint. No people, no humanoids, no robots, no letters, no signage, no logos, no text, no UI, no watermarks, no existing franchise elements. This is a brand-new text-only generation. Do not use or reproduce any previous image or illustration."
+    },
+    {
+      "id": "frame",
+      "filename": "enya-frame.png",
+      "transparent": true,
+      "prompt": "Use case: stylized-concept. Asset type: isolated transparent-background character illustration for an original science-fiction character website. New original drawing from this written character specification only. Subject: Enya, a human-shaped female tactical android with an adult young-woman appearance, elegant anime proportions, shown from top of hat to just below waist. Long thick mint-green twin ponytails, slightly wavy at their ends, swept mint fringe framing the forehead; amber-gold eyes behind thin dark rectangular glasses. Black charcoal peaked uniform cap with a mint accent band and two small white mechanical fin-like ornaments, not animal ears. White and pale-gray collared uniform top, black shoulder panels and dark trim, a deep raspberry-magenta necktie; modest fully covered clothing with a practical clean silhouette, no exposed cleavage. Her appearance is human with subtle mechanical garment detailing, not a metal skeleton. Expression: composed and attentive, a tiny understated softness in the eyes, closed mouth. Pose: a fresh relaxed three-quarter standing portrait facing slightly toward the viewer's left, shoulders straight, arms naturally relaxed near her sides. Both eyes and the complete glasses visible. Style: refined Japanese science-fiction animation character art, crisp confident linework, clean detailed cel shading, carefully controlled two- or three-tone shadow shapes; cinematic cool mint edge-light with a faint warm fill on the face, skin colors remain natural. Keep the hat, both ponytails and shoulders completely inside the canvas with clear transparent margins. Single character only. True transparent alpha background; no scene, no colored rectangle, no ground, no cast shadow outside the character, no text, no labels, no logo, no weapons, no added companion. Not pixel art, not photorealistic, not a 3D render. Portrait aspect ratio about 3:4. Do not use or imitate any supplied illustration, pose, composition, or artist. No reference images are provided."
+    },
+    {
+      "id": "brain",
+      "filename": "tia-brain.png",
+      "transparent": true,
+      "prompt": "Use case: stylized-concept. Asset type: isolated transparent-background mechanical character illustration for an original science-fiction character website. Create a NEW original drawing using only this text specification. Subject: Tia, a small hovering robotic strategy core, with a rounded white shell and charcoal-black upper housing resembling a compact cap. A white faceplate carries two large expressive purple/violet optical eyes and a very small dark triangular central mouth mark. The upper rim has a restrained pale mint accent. Two elongated tapering light-cyan/mint side appendages hang down from round side joints like mechanical ribbon fins; they are smooth articulated machine parts, not human hair and not bird wings. A short ribbed gray cylindrical module sits beneath the rounded head/body. Compact floating machine silhouette, no human torso, no legs, no human hands. Pose/composition: slight three-quarter view facing toward viewer's right; entire shell, underside and both fins visible, centered with generous transparent margin. Expression: alert, mildly skeptical, intelligent, without an aggressive grimace. Style: refined Japanese science-fiction animation character art, precise linework and detailed crisp cel shading, clean white ceramic-like panels, matte charcoal housing, restrained metallic joint detail; cool mint edge light and subtle warm fill, inky blue-gray shadows. True transparent alpha background, no scene, no pedestal, no colored rectangle, no text or labels, no watermark, no logos, no weapons, no extra characters. Not pixel art, not a 3D render, not photorealistic. Square composition. This is text-only generation; do not use, trace or imitate any previous illustration or artist."
+    },
+    {
+      "id": "workshop",
+      "filename": "creation-workbench.png",
+      "transparent": false,
+      "prompt": "Use case: stylized-concept. Asset type: wide cinematic website scene for an original creator and technical livestream introduction, 16:9 landscape. Paint an ORIGINAL quiet science-fiction creative workstation at night, viewed from a natural diagonal eye-level angle. A practical dark desk occupies the lower right half. Two modest computer displays show indistinct graphical application panes and soft abstract code-like marks, with absolutely no readable writing. A keyboard, a closed sketchbook and a few neatly arranged small electronic components suggest ongoing digital creation and technical experiments. A slim adjustable task lamp casts a warm pool of light on the desk. Empty chair partially tucked underneath. Background: tall dim window panes, dark blue-gray interior walls and restrained shelves, no recognizable city landmark. Left third calmer and darker for optional webpage typography; clear focal point on the illuminated desk, appealing depth and a believable lived-in workspace without clutter. Style: finely painted Japanese animation movie background with resolved perspective and material detail, cinematic cel-compatible lighting; dark ink-navy and slate, pale mint monitor glow, soft amber lamp light, sparse violet reflections. Quiet and focused atmosphere. No people, no androids, no robots, no holographic UI, no text, no logos, no watermarks, no recognizable software brands or copyrighted characters. Create solely from this text. Do not use, copy or imitate any reference image, existing room illustration, composition, or named artist."
+    }
+  ]
+}

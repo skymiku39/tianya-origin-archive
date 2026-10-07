@@ -1,0 +1,265 @@
+{
+  "version": 2,
+  "date": "2026-10-07",
+  "status": "Historical review closed by creator request to continue the website without generating characters. No preview is used on the published site; original PNGs and static frames from original GIFs are used instead.",
+  "latest_creator_instruction": "算了，請幫我繼續做吧，不用生成人物了",
+  "publication": "Preview files are preserved locally, excluded by .gitignore, and not uploaded. Prior prompts and review notes below are historical records, not active instructions.",
+  "tool": "built-in image_gen",
+  "use_case": "character appearance review before website integration",
+  "authorization": {
+    "scope": "Rabbit Tia only may use creator-supplied original images as image-generation references. Enya and scene artwork remain text-only.",
+    "creator_statement": "整體看起來沒問題，兔子的部分可能還是得參考一下原始設定，這個允許你用圖片生成圖片",
+    "originals": "read-only; do not overwrite or publish reference sources as generated outputs"
+  },
+  "specification": "docs/CHARACTER-SPEC.md",
+  "source_verification": {
+    "file_count": 53,
+    "changed": 0,
+    "missing": 0,
+    "unchanged": true,
+    "algorithm": "SHA256",
+    "original_reference_file_count": 4,
+    "original_reference_files_unchanged": true,
+    "status": "all 53 source-folder files and all 4 submitted original references unchanged"
+  },
+  "references": [
+    {
+      "file": "直播相關.png",
+      "sha256": "349A2DE510C43DD2ABB4C839CDC2CECAB1A4CBDBF9DF1243AF656499A3CE8EF3",
+      "role": "Original rabbit pixel appearance and colors",
+      "submitted_for": "tia only"
+    },
+    {
+      "file": "codex-clipboard-ebc3656f-2286-4451-b48e-e76595c5e019.png",
+      "sha256": "D2834E12CFB34404A2365C8C105BAF8A275CF8744B4E725B59754B97E99B2C55",
+      "role": "Rabbit body and landing-gear feet",
+      "submitted_for": "tia only"
+    },
+    {
+      "file": "codex-clipboard-b4666dd5-4075-412b-a503-6d68ed871509.png",
+      "sha256": "AF370CE624602BEBBAC67D85C524A25523FF02C8E8AA2699203517D6EE17E549",
+      "role": "Head rotor and flight geometry",
+      "submitted_for": "tia only"
+    },
+    {
+      "file": "codex-clipboard-8e998ea7-5c7d-41e7-9b49-da3d632d486a.png",
+      "sha256": "C7437492A822A62650B87F7B623A9B6B47F2228F0085B5C905B32A9F36C75F0E",
+      "role": "Opening tail sphere and discharge",
+      "submitted_for": "tia only"
+    }
+  ],
+  "assets": [
+    {
+      "id": "tia",
+      "filename": "tia-pixel-study-v1.png",
+      "transparent": false,
+      "method": "creator-authorized rabbit-only image-to-image",
+      "prompt": "Use case: style-transfer.\nAsset type: fine-pixel-art character study sheet, a preview for the creator to verify the SAME rabbit robot in three mechanical states.\nInput images, all supplied by the creator and authorized for this rabbit only:\nImage 1 = original pixel appearance reference: preserve its recognizable white face shape, large purple screen eyes, tiny triangular facial mark, black crown/hat silhouette, cyan-mint trim, and long floppy cyan mechanical rabbit ears. Ignore the cropped lettering, framing and backdrop.\nImage 2 = rabbit anatomy and articulated landing-gear feet reference.\nImage 3 = flight and hat-mounted propeller structure reference, including the colored small rabbit.\nImage 4 = tail sphere opening and electrical discharge reference, plus rotor overview. Use its petal-opening ball ONLY as the tail; do not open the main body.\nPrimary request: Render this creator-owned character, Tian-shu Tia, faithfully as refined detailed PIXEL ART. Keep the reference's rabbit identity and characteristic face/panel pattern, not a newly redesigned generic orb drone.\nComposition: a wide landscape sheet with THREE clearly separated equally sized views on one plain muted blue-gray background, no boxes and no lettering. All three are the exact same robot at the same body scale, complete within frame with generous margins.\nLeft: grounded, front three-quarter view; both long ears naturally droop; TWO small landing-gear legs extended with hinged foot pads as in Image 2; blades stowed; tail sphere closed and visible just behind the body.\nMiddle: flying, slight three-quarter view; feet retracted; thin blades extend radially from the outer rim of the hat/cap rotor. Central domed cap A remains seated on the head, at the SAME height as the grounded view. It can swivel independently but never spins together with the fast outer rotor B. Only outer rotor B and its extended blades rotate. No raised hat, no telescoping mast, no separate helicopter rotor above the hat. Tail closed, ears lowered.\nRight: rear three-quarter view emphasizing the SMALL tail sphere connected to the back of the robot, with its shell petals opened and a small readable pale-cyan electric arc discharge; main body remains closed, feet extended for support, propeller stowed. Keep the face partly visible and keep the tail distinct from the feet.\nIdentity invariants: compact white-and-black spherical rabbit body, approximately 35 cm diameter as a working proportion; two elongated rounded-tip cyan-mint mechanical rabbit ears hinged on side joints, hanging downward rather than bird wings or fins. Purple eyes are cute and normally open; mechanical camera elements stay fully open and screen shapes convey expression. No humanoid torso, no hands, no furry animal anatomy, no extra limbs. Preserve reference details rather than inventing armor, antennas or ornaments.\nPixel finish: deliberate visible square pixel clusters and stepped edges, coherent limited color ramps, clean controlled light/shadow, enough resolution for ear hinges, face plates, foot pads and cap seams to remain readable. True pixel drawing language, not a smooth anime painting with a mosaic filter. Consistent pixel scale across all views.\nConstraints: do not copy the source image layouts, screenshot borders, background text, labels or arrows. No humans, no extra characters, no floor scene, no weapons added beyond the specified tail discharge, no bottom thruster or fixed cylindrical dangling booster. No blur, 3D render, watermarks or text.",
+      "output": "assets/previews/tia-pixel-study-v1.png",
+      "review_status": "superseded by targeted removal of unconfirmed rear sockets",
+      "input_reference_files": [
+        "直播相關.png",
+        "codex-clipboard-ebc3656f-2286-4451-b48e-e76595c5e019.png",
+        "codex-clipboard-b4666dd5-4075-412b-a503-6d68ed871509.png",
+        "codex-clipboard-8e998ea7-5c7d-41e7-9b49-da3d632d486a.png"
+      ],
+      "visual_checks": [
+        "Rabbit face, drooping ears, articulated feet, retractable rim blades and opened electrical tail are visible.",
+        "The three-view sheet is a draft, not a final website asset. Static views cannot prove rotor kinematics; text specification remains authoritative."
+      ],
+      "sha256": "905340EAD9C656FFBCC9F3F216CC02843F4D2DE59F14944ED03559BAF441FFE6",
+      "width": 1942,
+      "height": 809,
+      "pixel_format": "RGB"
+    },
+    {
+      "id": "enya",
+      "filename": "enya-pixel-study-v1.png",
+      "transparent": true,
+      "method": "text-to-image; no reference images",
+      "prompt": "Use case: stylized-concept.\nAsset type: fine-pixel-art transparent character portrait, preview for a creator-owned science-fiction livestream character.\nGenerate from this TEXT ONLY. No image reference, previous illustration, pose, composition, or artist style is supplied or to be copied.\nSubject: Chu-ya Enya, a feminine human-shaped android with adult human proportions, approximately 175 cm in the character setting. This is her SEPARATE form, without the rabbit core. A generous full bust under a fully covered uniform is part of her silhouette; retain natural tall humanoid proportions, not a child and not chibi. Long thick mint-green twin ponytails, a mint fringe, golden amber eyes behind thin dark glasses. A dark charcoal peaked cap with small restrained white decorative marks, a white collared uniform top with black panels and trim, a deep raspberry/magenta necktie. The clothing is fully closed and opaque, no exposed cleavage, no skin cutouts, no added military badges or equipment.\nFace and personality are the priority: slightly rounded bright golden eyes, soft eyebrows, an endearingly curious and mildly puzzled expression, a very small friendly mouth, a gentle head tilt. She is direct, socially literal, and capable, not aloof, severe or sharp-eyed. No cynical smirk, no seductive pose.\nComposition: one single character, a relaxed three-quarter standing portrait from the complete cap down to mid-thigh, arms naturally resting at her sides, full ponytail ends and both shoulders visible, no props. Ample transparent space around the silhouette. Human-like skin tone with gentle shading, no exposed skeleton or gratuitous robotic joints. No rabbit on her back in this separate-form image. Eyes remain GOLD without purple fusion signals.\nStyle: refined detailed pixel art with intentional visible square pixel clusters, stepped clean outlines and a coherent restrained color ramp. Clear readable glasses and pupils. Enough detail to feel like a carefully crafted large character sprite, with normal human body proportions. Calm soft illumination, clear silhouette, mint hair and amber-gold eyes as focal colors. Not smooth cel painting with a pixelation filter, not 3D, not photoreal.\nBackground: genuine transparent alpha, no colored matte, no scene, no ground plane, no extraneous drop shadow, no text, no logos, no watermark. Portrait format about 3:4.",
+      "output": "assets/previews/enya-pixel-study-v1.png",
+      "review_status": "first candidate superseded by a text-only revision attempt",
+      "input_reference_files": [],
+      "visual_checks": [
+        "Expression is softer and curious.",
+        "Hat crown touches the upper image edge; bright color fringe is visible around portions of the hair."
+      ],
+      "sha256": "5978777A55A91553664DC55B0BF3F26D9D6822CE5F74857E8C9E6EF0C2C3F151",
+      "width": 1086,
+      "height": 1448,
+      "pixel_format": "RGBA"
+    },
+    {
+      "id": "enya-v2",
+      "filename": "enya-pixel-study-v2.png",
+      "transparent": true,
+      "method": "text-to-image; no reference images; framing and edge-color revision",
+      "prompt": "Use case: stylized-concept.\nAsset type: fine-pixel-art transparent character portrait, preview for a creator-owned science-fiction livestream character.\nGenerate from this TEXT ONLY. No image reference, previous illustration, pose, composition, or artist style is supplied or to be copied.\nSubject: Chu-ya Enya, a feminine human-shaped android with adult human proportions, approximately 175 cm in the character setting. This is her SEPARATE form, without the rabbit core. A generous full bust under a fully covered uniform is part of her silhouette; retain natural tall humanoid proportions, not a child and not chibi. Long thick mint-green twin ponytails, a mint fringe, golden amber eyes behind thin dark glasses. A dark charcoal peaked cap with small restrained white decorative marks, a white collared uniform top with black panels and trim, a deep raspberry/magenta necktie. The clothing is fully closed and opaque, no exposed cleavage, no skin cutouts, no added military badges or equipment.\nFace and personality are the priority: slightly rounded bright golden eyes, soft eyebrows, an endearingly curious and mildly puzzled expression, a very small friendly mouth, a gentle head tilt. She is direct, socially literal, and capable, not aloof, severe or sharp-eyed. No cynical smirk, no seductive pose.\nComposition: one single character, a relaxed three-quarter standing portrait from the complete cap down to mid-thigh, arms naturally resting at her sides, full ponytail ends and both shoulders visible, no props. MANDATORY framing: leave at least 10 percent of canvas height as fully empty transparent space ABOVE the highest point of her cap, and at least 8 percent empty space at each side. Make the figure smaller to fit. The ENTIRE hat crown, cap button, brim, ponytail ends, both elbows and hands must fit safely inside the canvas. Only the intended mid-thigh portrait cutoff may reach the lower frame. Human-like skin tone with gentle shading, no exposed skeleton or gratuitous robotic joints. No rabbit on her back in this separate-form image. Eyes remain GOLD without purple fusion signals.\nStyle: refined detailed pixel art with intentional visible square pixel clusters, stepped clean outlines and a coherent restrained color ramp. Clear readable glasses and pupils. Enough detail to feel like a carefully crafted large character sprite, with normal human body proportions. Calm neutral soft illumination with NO colored rim light. Mint hair uses muted mint, sage and desaturated teal, never neon green. Clear silhouette; mint hair and amber-gold eyes are the focal colors. Not smooth cel painting with a pixelation filter, not 3D, not photoreal.\nBackground: genuine transparent alpha with immaculate clean pixel boundaries. Every boundary pixel must belong to the muted character color palette, with no neon green, green-screen spill, cyan fringe, stray pixels or colored matte. No chroma-key-looking edge artifacts, no scene, no ground plane, no extraneous drop shadow, no text, no logos, no watermark. Portrait format about 3:4.",
+      "output": "assets/previews/enya-pixel-study-v2.png",
+      "input_reference_files": [],
+      "review_status": "creator approved expression, humanoid proportions and clothing direction; transparent-edge quality still needs refinement before production use",
+      "visual_checks": [
+        "Complete cap fits inside the image with upper margin.",
+        "Golden eyes, glasses, curious expression and normal humanoid proportions visible.",
+        "RGBA transparency confirmed; bright color fringe remains at some hair/hand boundaries. Do not use as a production cutout yet."
+      ],
+      "sha256": "CDDF782015C770BFF5F1763EA84D68CBB9DAA54B0A13ECF813C6A0B9CC3FBB2B",
+      "width": 1086,
+      "height": 1448,
+      "pixel_format": "RGBA"
+    },
+    {
+      "id": "tia-v2",
+      "filename": "tia-pixel-study-v2.png",
+      "transparent": false,
+      "method": "targeted image edit of the generated rabbit study; covered by rabbit-only authorization",
+      "prompt": "Use case: precise-object-edit.\nInput image 1: the generated three-view pixel-art study sheet of the creator's rabbit robot Tia. Edit this sheet, do not redesign it.\nChange ONLY the RIGHTMOST rear-three-quarter rabbit: remove the two conspicuous oversized dark circular sockets/connectors sitting on the rear shell above the electrical tail attachment. These extra rear ports are NOT part of the approved character design. Replace those two socket areas with continuous simple white/charcoal body shell panels matching the existing sphere; retain only understated panel seams.\nPreserve the small tail attachment itself at the lower rear of the sphere, the open petal-shell tail ball and cyan electrical arc. Preserve the ear pivot hinges, face and eye on the visible front side, both drooping cyan rabbit ears and landing-gear feet. Do not accidentally delete an ear joint or tail joint.\nEverything else must remain unchanged: all LEFT and MIDDLE views, layout, framing, dimensions, plain blue-gray background, face shapes, purple eyes, black/white cap markings, cyan rim, extended flight blades, character scale, colors and detailed pixel-art treatment. The cap stays seated on the head, without an elevating mast. No new ports, no docking apparatus, no text, no extra objects. This is a localized cleanup of invented details, not a new mechanical design.",
+      "input_reference_files": [
+        "assets/previews/tia-pixel-study-v1.png"
+      ],
+      "output": "assets/previews/tia-pixel-study-v2.png",
+      "review_status": "not approved; source audit found mechanical omissions; do not use this generated sheet as authoritative geometry",
+      "visual_checks": [
+        "Unconfirmed oversized rear socket removed.",
+        "Tail connection, electrical tail, landing feet, drooping ears and flight rotor retained.",
+        "Static study sheet does not by itself verify movement; the approved written rotor specification is authoritative."
+      ],
+      "sha256": "BA3F0A0F57EEE6BCF4660F2AC10243FA18ED0396DC9381D65DDA2BE0780E95B3",
+      "width": 1942,
+      "height": 809,
+      "pixel_format": "RGB",
+      "correction_notes": [
+        "Use low-profile A/B rotor geometry rather than an oversized ordinary hat.",
+        "Preserve segmented ear and ear-root details; do not exclude all manipulators.",
+        "Keep landing gear compact and retractable.",
+        "Restore source-defined back rail and moving-cover structure; do not retain invented generic sockets.",
+        "Vertical elevation and rearward turning are different; original no-elevation answer does not prohibit source-defined rotor turning."
+      ]
+    }
+  ],
+  "creator_review": {
+    "tia": {
+      "feedback": "有部件畫錯，我會補充修正",
+      "status": "not approved; source directory reviewed and corrective discrepancies documented; exact role of side-mounted long components remains unspecified"
+    },
+    "enya": {
+      "feedback": "符合，保留這個方向",
+      "status": "expression, humanoid proportions and clothing direction approved; alpha-edge cleanup remains a separate technical task"
+    }
+  },
+  "review_candidates": [
+    "assets/previews/tia-pixel-study-v2.png",
+    "assets/previews/enya-pixel-study-v2.png"
+  ],
+  "reference_audit": {
+    "date": "2026-10-07",
+    "status": "source comparison completed; no new image generated during this review",
+    "files": [
+      {
+        "file": "直播相關.png",
+        "role": "appearance",
+        "note": "Original pixel rabbit face and palette; simplified avatar does not define all mechanics.",
+        "sha256": "349A2DE510C43DD2ABB4C839CDC2CECAB1A4CBDBF9DF1243AF656499A3CE8EF3"
+      },
+      {
+        "file": "直播相關2.png",
+        "role": "body",
+        "note": "Rabbit body outline, ears and closed tail sphere.",
+        "sha256": "8EB527393B5DB5DF4BDFD2750B44BD982F0F05AC8E4BB6DAA4C89C4DEB385897"
+      },
+      {
+        "file": "直播相關3.png",
+        "role": "mechanical-detail",
+        "note": "Long side-mounted extended components; exact tool/weapon role not inferred.",
+        "sha256": "B971AE3589ADE7881290157519732CC4ECC7C7E56C93DF8F19A4B5BE58D6228C"
+      },
+      {
+        "file": "直播相關4.png",
+        "role": "mechanical-detail",
+        "note": "Side manipulation/pen-holding sketches and rotation around ear-root structure.",
+        "sha256": "496F2EB1F066D75BCCA621D9488577CF2FC71529021584B1D055A3168CB21DE4"
+      },
+      {
+        "file": "直播相關5.png",
+        "role": "mechanical-overview",
+        "note": "Rotor, compact landing gear, tail opening and electrical discharge.",
+        "sha256": "9738AF703FF4A737B4D875C7A32E7A76F84ED2791BBB625111614C03453ED8F0"
+      },
+      {
+        "file": "直播相關6.png",
+        "role": "mechanical-detail",
+        "note": "Segmented ear plates and round ear-root assembly.",
+        "sha256": "1B22577EAC67414C07FC968D1512D7E91FC2C9FAB13853483890CAF80014D019"
+      },
+      {
+        "file": "直播相關7.png",
+        "role": "mechanical-detail",
+        "note": "Low-profile A/B cap/rotor stack; A swivels separately from the high-speed B rotor.",
+        "sha256": "E5E35F01862FCBBCA1E94D8927A70C3A8AC0919578B714CB6A669784D45ECA1B"
+      },
+      {
+        "file": "直播相關8.png",
+        "role": "mechanical-overview",
+        "note": "Back docking, rotor turning/sliding toward the rear for propulsion; rails, moving covers and closed state. Viewed at original detail for labels.",
+        "sha256": "98B9A1B46C5698DFC0A9B54BF3A73CFC1C0BD86B3D564C9FD2E4F5BA25497984"
+      },
+      {
+        "file": "直播相關9.png",
+        "role": "human-reference-read-only",
+        "note": "Birthday chibi illustration; not submitted to generation, not a reason to change approved Enya proportions.",
+        "sha256": "6C37F6EC5A44D3BB37F39AD1D5C797F046CD73B96CC8D702228F75A3BD81BBB4"
+      },
+      {
+        "file": "image.png",
+        "role": "human-reference-read-only",
+        "note": "Original pixel character composition; not submitted to generation in this review.",
+        "sha256": "5746043278965D75441051E24FBF084509A3DA8D31B02660900CD3E44274A7D9"
+      },
+      {
+        "file": "260709_stream.png",
+        "role": "setting-read-only",
+        "note": "Pixel livestream room; scene objects do not define body mechanics.",
+        "sha256": "9F454BB59855076AC80721DC166AFDD13D59A8984BBF654776880FCC92E2ADF4"
+      },
+      {
+        "file": "tutu.gif",
+        "role": "still-frame-only",
+        "note": "Rabbit in room context; complete animation not evaluated.",
+        "sha256": "9EDC6E9143D7B4B2DB6D76BB301A203AB2008C226DAF4415059791393376AB59"
+      },
+      {
+        "file": "260727_skymiku_v02.gif",
+        "role": "still-frame-only",
+        "note": "Humanoid visual reference only; approved Enya v2 direction retained.",
+        "sha256": "3F96345A76B39B271531D90DE4D86F2C1F1372DBD19959B161A9462101CB5E99"
+      },
+      {
+        "file": "260709_stream_03.gif",
+        "role": "still-frame-only",
+        "note": "Room and character still frame; not full animation evaluation.",
+        "sha256": "E1E3469826ADF59E7B37EADA6B1D92E3663DDD7866E8C196C91594F42CAB2A24"
+      },
+      {
+        "file": "3934d6f27c1d298b.gif",
+        "role": "still-frame-only",
+        "note": "Displayed frame is black; no character mechanics inferred.",
+        "sha256": "53050C7E8690D1B899B7E79E721E5AE8C47E462800C4B97C4579C02A1981A56D"
+      }
+    ],
+    "excluded_from_character_mechanics": [
+      "event promotional assets",
+      "music",
+      "transition assets",
+      "videos not reviewed in this pass"
+    ],
+    "correction_priorities": [
+      "Use low-profile A/B rotor geometry rather than an oversized ordinary hat.",
+      "Preserve segmented ear and ear-root details; do not exclude all manipulators.",
+      "Keep landing gear compact and retractable.",
+      "Restore source-defined back rail and moving-cover structure; do not retain invented generic sockets.",
+      "Vertical elevation and rearward turning are different; original no-elevation answer does not prohibit source-defined rotor turning."
+    ],
+    "remaining_uncertainty": "Purpose of long side-mounted components in 直播相關3.png and their relationship to the manipulator in 直播相關4.png; not automatically named or rendered as new weapons."
+  }
+}

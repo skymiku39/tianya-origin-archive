@@ -1,53 +1,50 @@
-# 天芽 T.I.A.N.Y.A.｜角色與直播介紹
+# 天芽 T.I.A.N.Y.A.｜角色設定與創作直播
 
-天芽的單頁角色介紹網站：從軍方分離式雙核戰術原型機、博物館展示品與脫逃，接到她選擇以直播繼續輸出、交流與體驗日常的故事。
+[公開網站](https://skymiku39.github.io/tianya-origin-archive/)
 
-公開頁面：[天芽的角色與直播介紹](https://skymiku39.github.io/tianya-origin-archive/)
+天芽的單頁介紹：軍方原型機、博物館封存與重啟脫逃，以及開始創作與技術實作直播的原因。使用創作者的原始像素素材，沒有套用生成角色圖。
 
-## 內容
+## 本版內容
 
-- 天芽的原始名稱、設計定位與性格反差
-- 天樞—緹亞（Brain）與初芽—恩雅（Frame）的雙核介紹
-- 軍方、博物館、脫逃與流浪四階段起源
-- 為什麼開始直播，以及可複製的簡短自我介紹
-- 可重播的啟動紀錄與鍵盤可操作的雙核分頁
+- 保留章節網址：`#top`、`#dossier`、`#history`、`#architecture`、`#streaming`。
+- 天樞—緹亞為兔形策略核心，初芽—恩雅為人型載體；合體稱為天芽，以恩雅人格主導。
+- 正文直接顯示；沒有啟動彈窗、折疊故事、複製介紹按鈕或假頻道連結。
+- 像素插畫配上可讀的中文黑體、深藍灰、薄荷綠及紫色。原圖完整呈現，文字不覆蓋角色。
+- 手機雙核上下排列。所有內容不依賴 JavaScript；JS 只標示目前章節。
+- 沒有後端、第三方套件、外部字型、分析追蹤或自動播放素材。
 
-本版以創作者原稿為基礎，收回先前擴寫的硬體規則、事件細節與額外人際背景。直播銜接是本次為介紹頁撰寫的文案；未指定的頻道網址、節目表與觀眾稱呼不填入假資料。
+## 素材與創作規範
 
-## 素材
-
-網站使用創作者提供的既有素材副本：
-
-| 專案資產 | 來源檔名 | 用途 |
+| 網站資產 | 創作者來源 | 處理 |
 | --- | --- | --- |
-| assets/tianya-pixel-portrait.png | image.png | 天芽像素插畫 |
-| assets/tianya-stream-room.png | 260709_stream.png | 直播待機畫面 |
+| `assets/tianya-pixel-portrait.png` | `image.png` | 原檔副本，首頁與分享預覽 |
+| `assets/tianya-stream-room.png` | `260709_stream.png` | 原檔副本，創作直播段落 |
+| `assets/enya-original-still.png` | `260727_skymiku_v02.gif` | 僅提取第一影格 |
+| `assets/tia-original-still.png` | `tutu.gif` | 僅提取第一影格 |
 
-來源目錄只供讀取；複製到專案的檔案未經生成式 AI 處理。本版未生成圖片。今後若使用生成式 AI，依創作者要求採「參考圖片 → 文字描述 → 純文字生成圖片」，不將參考圖傳入生成工具。
+來源素材目錄維持唯讀。靜態影格沒有重繪、補畫或生成式處理。原圖的房間道具、背景線路與 Q 版比例不另行解釋為角色能力或機構。
 
-## 預覽
+依最新指示停止角色生圖。先前樣張保留在本機 `assets/generated/`、`assets/previews/` 與四個 WebP 實驗檔，由 `.gitignore` 排除，不上傳或發布。歷史提示詞保留於 `docs/image-generation*.json`，不是現行設定。
 
-直接開啟 index.html，或在專案目錄啟動靜態伺服器：
+素材雜湊與處理紀錄見 [docs/source-assets.json](docs/source-assets.json)。未宣告開源授權；此儲存庫公開不等於授權他人使用角色或原始美術。
+
+## 本機預覽與檢查
+
+不需安裝套件。Node.js 執行：
 
 ```powershell
-python -m http.server 4173 --bind 127.0.0.1
+node scripts/preview.mjs
+node --test
 ```
 
-前往 http://127.0.0.1:4173/。本專案不需要建置工具或外部套件。
+預覽 [http://127.0.0.1:4174/](http://127.0.0.1:4174/)。預覽伺服器只提供網站必要檔案，不會提供設定文件、Git 資料或生成草稿。以 `?js=off` 可在該次預覽回應用 CSP 停用 JavaScript，檢查原生閱讀與導覽；這不會修改瀏覽器全域設定。
 
-## 專案結構
+也可直接開啟 `index.html`，或使用任何靜態伺服器。GitHub Pages 沿用 `main` 分支根目錄發布，沒有編譯步驟。
 
-```text
-.
-├── assets/
-│   ├── tianya-pixel-portrait.png
-│   └── tianya-stream-room.png
-├── app.js
-├── docs/
-│   ├── DESIGN-REVIEW.md
-│   └── SETTING-AND-DESIGN.md
-├── index.html
-└── styles.css
-```
+## 設定與維護
 
-設定來源與文案見 docs/SETTING-AND-DESIGN.md；本次調整原則見 docs/DESIGN-REVIEW.md。
+- [角色規格](docs/CHARACTER-SPEC.md)：最新的人格、外觀與機構確認。
+- [設定與文案來源](docs/SETTING-AND-DESIGN.md)：原稿、後續確認與直播銜接。
+- [設計及驗收紀錄](docs/DESIGN-REVIEW.md)：本版範圍、實作與檢查結果。
+
+後續文案以創作者最新回覆優先，不用舊生成提示詞補寫世界觀。頻道、排程或其他資料尚未提供時，不建立佔位連結。

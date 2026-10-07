@@ -2,3 +2,11 @@
 .DS_Store
 Thumbs.db
 
+# Local, unapproved image experiments are preserved but never published.
+/assets/generated/
+/assets/previews/
+/assets/creation-workbench.webp
+/assets/enya-frame.webp
+/assets/museum-hall.webp
+/assets/tia-brain.webp
+
